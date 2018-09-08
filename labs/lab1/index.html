@@ -14,14 +14,8 @@ in html
     <head>
         <meta charset="utf-8" />
         <title>Elijah Baird's Personal Website</title>
-        
-        <style>
-            
-            hr {
-                width: 50%;
-            }
-            
-        </style>
+        <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     </head>
 <!-- closing head -->
 
@@ -29,21 +23,48 @@ in html
     <!-- This is where we place the content of our website -->
     <body>
         <header>
-            <h1>Elijah Baird</h1>
+            <h1>Juan Doe</h1>
         </header>
         
         <nav>
-            <hr>
-            <a href="index.html">Home</a>
+            <hr width = "50%"/>
+            <a href="index.html" style="color:SlateBlue;">Home</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact me</a>
         </nav>
         
+        <main>
+            <figure id="me">
+                
+                <img src="img/juan_doe.png" width="300">
+                
+            </figure>
+            </br>
+            <div id="welcomeText">
+                Hello! </br>
+                <p>Thank you for visiting my professional portfolio website.</p>
+                
+                <p>I am a Software Engineer and have been recently hired at the Acme Corporation.</p>
+                
+                <em>"With ordinary talent and extraordinary <strong>perseverance</strong>, all things are attainable"</em></br>
+                - Thomas F. Buxton
+            </div>
+            
+        </main>
+        
         <!-- This is the footer -->
         <!-- The footer goes inside the body but not always -->
-        <footer>
+        <footer style="clear: left;">
+            <small>
+            <hr witdth = "100%"/>
+            <p style="color:MediumSeaGreen;">
+            &copy; CST 336 2018 Elijah Baird <br/>
             
-            
+            <strong>Disclaimer:</strong> The information displayed on this page is fake. It's used for academic purposes only.
+            <br/>
+            </p>
+            <img src="../../img/csumb_logo.jpg" alt="CSUMB logo" title="This is the CSUMB logo"/>
+            </small>
         </footer>
         <!-- closing footer -->
         
