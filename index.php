@@ -1,3 +1,6 @@
+header( 'Location: http://example.com/file.html' );
+exit()
+
 <!DOCTYPE html>
 <html>
  
