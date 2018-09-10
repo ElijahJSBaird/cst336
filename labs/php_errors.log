@@ -1,0 +1,2 @@
+[10-Sep-2018 21:43:38 UTC] PHP Parse error:  syntax error, unexpected 'ucfirst' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/cst336/labs/lab2/index.php on line 12
+[10-Sep-2018 22:03:08 UTC] PHP Parse error:  syntax error, unexpected 'displaySymbol' (T_STRING) in /home/ubuntu/workspace/cst336/labs/lab2/index.php on line 39
