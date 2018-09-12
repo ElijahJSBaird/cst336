@@ -55,3 +55,11 @@ img {
 img:hover {
     opacity: 0.5;
 }
+
+#hr50 {
+    width: 50%;
+}
+
+#hr100 {
+    width: 100%;
+}
