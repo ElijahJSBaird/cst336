@@ -1,0 +1,57 @@
+body {
+    background-image: url("img/binarytree.png");
+    /*background-color: orange;*/
+    color:black;
+    text-align: center;
+    font-size: large;
+}
+
+header, #wordCloud {
+    text-align: center;
+}
+
+#main_title {
+    font-size: 300%;
+}
+
+footer, ul {
+    text-align: left;
+    clear:left;
+    
+}
+
+#dataStructureList {
+    padding-left: 48%;
+}
+
+#main {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+nav {
+    text-align: center;
+    float: center;
+}
+
+nav a {
+    padding:15px;
+    padding-bottom:4px;
+    font-size: 1.8em;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    border-bottom:2px brown solid;
+    font-size: 2em;
+    transition: 0.9s; 
+}
+
+img {
+    border: 7px solid seagreen;
+}
+
+img:hover {
+    opacity: 0.5;
+}

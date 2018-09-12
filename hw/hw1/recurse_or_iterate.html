@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Recursion or Iteration</title>
+        <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body id="main">
+        <header>
+            <h1 id="main_title">The Differences between Recursive and Iterative Traversal 
+            Methods</h1>
+        </header>
+        
+        <nav>
+            <hr width = "50%"/>
+            <a href="index.html">Home</a>
+            <a href="recurse_or_iterate.html" style="color:orange;">Recursion 
+            or Iteration</a>
+            <a href="simple.html">Simple Data Structures</a>
+            <a href="complex.html">Complex Data Structures</a>
+            <hr width = "50%"/>
+        </nav>
+        <br/><br/>
+        <h2>Recursion</h2>
+        <figure>
+            <img src="img/recursion.jpg" alt="The word recursion repeating as if
+            it is a mirror in front of another mirror" title="Recursion"
+            width="225">
+        </figure>
+        <div>
+            <br/>
+            Recursion is the method of traversing through data structures by 
+            making a function that does one simple traversal and then it calls 
+            itself again and again until the base case is reached. The base case 
+            is when the traversal should stop or when the data is found. 
+            <br/><br/><i>
+            A good way to think about recursion is by thinking about what 
+            happens when you put a mirror in front of another mirror. One mirror
+            will show the other mirror over and over until it is too small to
+            see. In other words, the mirror is showing an image and then 
+            repeating it's task. 
+            <i/><br/><br/>
+            One data structure that benefits from recursion and can not easily
+            be done with iteration would be a linked list. To find some data all
+            that would need to be done is go to the next node (or specific node 
+            if there is more than one) and check if it has the right data. If 
+            not, go to the next one until the data is found or the end of the 
+            list is reached. 
+        </div>
+        <h2>Iteration</h2>
+        <aside>
+            <img src="img/iteration.png" alt="A circle with a few arrows 
+            pointing to each other in a circle" title="Iteration" width="225">
+        </aside>
+        <figure>
+            
+        </figure>
+        <div>
+            <br/>
+            Iteration is the method of traversing through data structures by 
+            index. If the data structure has indices then the data in it can be
+            randomly accessed and as long as the number of elements is known, 
+            any element can be obtained.
+            <br/><br/><i>
+            Iteration is like finding the page of a book. You need to flip 
+            through the book to find the page number. 
+            </i><br/><br/>
+            One data structure that works well with iteration is an array like 
+            a vector. They are indexed so to navigate through them you need to
+            go through the elements which is what iteration is for.
+        </div>
+        
+        <footer id="recursefooter">
+            <small>
+            <hr witdth = "100%"/>
+            <p>
+            CST 336 2018 &copy; Baird <br/>
+            
+            <strong>Disclaimer:</strong> The information displayed on this page 
+            for academic purposes only. <br/>
+            <br/>
+            </p>
+            <img src="../../img/csumb_logo.jpg" alt="CSUMB logo" title="This is the CSUMB logo"/>
+            <!--<img src="../../img/buddy_verified.png" alt="Buddy Verified" title="This is the buddy verification badge"/>-->
+            </small>
+        </footer>
+    </body>
+</html>
