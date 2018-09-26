@@ -97,7 +97,7 @@
             
         }
         echo "<hr><h2>Organization XIII is the main antagonist group of Kingdom Hearts 2 and was improved until the final battle in Kingdom Hearts 3</h2><br/>";
-        $orgMembers = array("axel", "marluxia", "roxas", "xemnas", "xion");
+        $orgMembers = array("axel", "demyx", "larxene", "lexaeus", "luxord", "marluxia", "roxas", "saix", "vexen", "xaldin", "xemnas", "xigbar", "xion", "xemnas");
 
         while (sizeof($orgMembers) > 0)
         {

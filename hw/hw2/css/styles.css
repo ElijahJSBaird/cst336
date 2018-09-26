@@ -1,6 +1,6 @@
 body 
 {
-    background-color: black;
+    background-color: teal;
     text-align: center;
 }
     
@@ -12,6 +12,7 @@ footer
     margin:0 auto;
     padding-top:10px;
 }
+
 
 img 
 {
