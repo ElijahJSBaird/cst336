@@ -1,0 +1,19 @@
+body 
+{
+    background-color: black;
+    text-align: center;
+}
+    
+footer
+{
+    font-family: "Times New Roman", Georgia, Serif;
+    font-size:.8em;
+    width:600px;
+    margin:0 auto;
+    padding-top:10px;
+}
+
+img 
+{
+    border-radius:20px;
+}
