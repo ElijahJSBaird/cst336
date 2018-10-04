@@ -2,21 +2,38 @@
 
 $backgroundImage = "img/sea.jpg";
 
-// print_r ($_GET);//$_GET is special and will automatically get what is submitted in the form with the GET method
-//also $_POST for the POST method in a form
+if (isset($_GET["keyword"])) {  //checks if the form has been submitted
 
-if (isset($_GET["keyword"]))
-{
-    $keyword = $_GET["keyword"];
     include "api/pixabayAPI.php";
-    echo "You searched for: $keyword";
-    
-    echo "Layout: ".$_GET["layout"];
 
-    $imageURLs = getImageURLs($keyword, $_GET["layout"]);
+    $keyword = $_GET["keyword"];
     
-    $backgroundImage = $imageURLs[array_rand($imageURLs)];
+    if (!empty($_GET['category'])) { //user selected a category
+        
+        $keyword = $_GET['category'];
+        
+    }
+    
+    
+    echo "You searched for:  $keyword";
+    
 
+   $imageURLs = getImageURLs($keyword, $_GET["layout"]);
+   //print_r($imageURLs);
+   //shuffle($imageURLs);
+
+   $backgroundImage = $imageURLs[array_rand($imageURLs)];
+  
+}
+
+function formIsValid() {
+    
+    if (empty($_GET['keyword']) && empty($_GET['category'])) {
+        echo "<h1> ERROR!!! You must type a keyword or select a category</h1>";
+        return false;
+    }
+    return true;
+            
 }
 
 ?>
@@ -24,26 +41,116 @@ if (isset($_GET["keyword"]))
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Lab 4: Image Slideshow </title>
+        <title> Lab 4: Pixabay Slideshow </title>
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="css/styles.css" type="text/css" />
         
         <style>
-            body
-            {
+            
+            body {
+                
                 background-image: url(<?=$backgroundImage?>);
                 background-size: cover;
+                
             }
+            
+            #carouselExampleIndicators{
+                 width:500px;
+                 margin:0 auto; 
+            }
+            
         </style>
+        
     </head>
+
+
     <body>
-        <form method="GET"><!--Not having a method will default to method="GET"  POST is like GET but doesnt show anything new in url, good for sensitive information like passwords-->
-            <input type="text" name="keyword" size="15" placeholder="Keyword"/>
+    
+        <br>
+
+        <form method="GET">
             
-            <input type="radio" name="layout" value="horizontal"> Horizontal
-            <input type="radio" name="layout" value="vertical"> Vertical
+            <input type="text" name="keyword" size="15" placeholder="Keyword" value="<?=$_GET['keyword']?>" />
             
-            <input type="submit" name="submitButton" value="Submit!!"/>
+            <input type="radio" name="layout" value="horizontal" 
+              <?php
+              
+                if ($_GET['layout'] == "horizontal") {
+                    echo " checked";
+                }
+              
+              ?>
             
-            <h1>You must type a keyword or select a catagory</h1>
+            > Horizontal
+            <input type="radio" name="layout" value="vertical"  
+               <?= ($_GET['layout'] == "vertical")?" checked":"" ?>  > Vertical
+        
+
+            <select name="category">
+                <option value=""> Select One </option>
+                <option value="ocean">Sea</option>
+                <option>Mountains</option>
+                <option>Forest</option>
+                <option  <?= ($_GET['category'] == "Sky")?" selected":"" ?> >Sky</option>
+            </select>
+            
+            <input type="submit" name="submitBtn" value="Submit!!" />
+            
         </form>
+
+        <!--<h1>You must type a keyword or select a category</h1>-->
+        
+        <?php 
+        if (isset($imageURLs) &&  formIsValid() ) { ?>
+        
+           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <?php
+                  for ($i=1; $i < 9; $i++) { 
+                    echo "<li data-target='#carouselExampleIndicators' data-slide-to='$i'></li>";
+                  }
+                 ?>
+              </ol>
+              <div class="carousel-inner">
+                <?php
+                  for ($i = 0; $i < 9; $i++) {
+                      do {
+                       $randomIndex = array_rand($imageURLs);  // rand(0, count($imageURLs)-1);
+                      }
+                      while (!isset($imageURLs[$randomIndex]));
+                      echo "<div class=\"carousel-item ";
+                      echo ($i == 0)?" active ":"";
+                      echo "\">";
+                      echo "<img class=\"d-block w-100\" src=\"".$imageURLs[$randomIndex]."\" alt=\"Second slide\">";
+                      echo "</div>";
+                      unset($imageURLs[$randomIndex]);
+                  }
+                 ?>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+        
+        <?php
+         } //closing if isset($imageURLs)
+         else {
+            
+            echo "<br><h1>Enter a Keyword or Select a Category!</h1>";     
+             
+         }
+        ?>
+
+
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+       
     </body>
 </html>
