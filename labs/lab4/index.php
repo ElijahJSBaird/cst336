@@ -1,34 +1,24 @@
 <?php
+    $backgroundImage = "img/sea.jpg";
 
-$backgroundImage = "img/sea.jpg";
-
-if (isset($_GET["keyword"])) {  //checks if the form has been submitted
-
-    include "api/pixabayAPI.php";
-
-    $keyword = $_GET["keyword"];
+    if (isset($_GET["keyword"])) 
+    {  
+        include "api/pixabayAPI.php";
+        $keyword = $_GET["keyword"];
+        if (!empty($_GET['category'])) 
+        { 
+            $keyword = $_GET['category'];
+        }
     
-    if (!empty($_GET['category'])) { //user selected a category
-        
-        $keyword = $_GET['category'];
-        
+       $imageURLs = getImageURLs($keyword, $_GET["layout"]);
+    
+       $backgroundImage = $imageURLs[array_rand($imageURLs)];
     }
-    
-    
-    echo "You searched for:  $keyword";
-    
 
-   $imageURLs = getImageURLs($keyword, $_GET["layout"]);
-   //print_r($imageURLs);
-   //shuffle($imageURLs);
-
-   $backgroundImage = $imageURLs[array_rand($imageURLs)];
-  
-}
-
-function formIsValid() {
-    
-    if (empty($_GET['keyword']) && empty($_GET['category'])) {
+function formIsValid() 
+{
+    if (empty($_GET['keyword']) && empty($_GET['category'])) 
+    {
         echo "<h1> ERROR!!! You must type a keyword or select a category</h1>";
         return false;
     }
@@ -48,45 +38,31 @@ function formIsValid() {
         
         <style>
             
-            body {
-                
+            body 
+            {
+                border-radius: 12px;
                 background-image: url(<?=$backgroundImage?>);
                 background-size: cover;
-                
             }
             
-            #carouselExampleIndicators{
+            #carouselExampleIndicators
+            {
                  width:500px;
                  margin:0 auto; 
             }
-            
         </style>
-        
     </head>
-
-
     <body>
-    
         <br>
-
         <form method="GET">
-            
-            <input type="text" name="keyword" size="15" placeholder="Keyword" value="<?=$_GET['keyword']?>" />
-            
-            <input type="radio" name="layout" value="horizontal" 
-              <?php
-              
-                if ($_GET['layout'] == "horizontal") {
-                    echo " checked";
-                }
-              
-              ?>
-            
-            > Horizontal
-            <input type="radio" name="layout" value="vertical"  
-               <?= ($_GET['layout'] == "vertical")?" checked":"" ?>  > Vertical
-        
-
+            <input id="layoutDiv" type="text" name="keyword" size="15" placeholder="Keyword" value="<?=$_GET['keyword']?>" />
+            <div id="layoutDiv">
+                <input type="radio" name="layout" value="horizontal" id="layout_h">
+                <label for="layout_h"> Horizontal </label><br>
+                 <input type="radio" name="layout" value="vertical" id="layout_v">
+                 <label for="layout_v"> Vertical </label><br>
+            </div>
+            <br>
             <select name="category">
                 <option value=""> Select One </option>
                 <option value="ocean">Sea</option>
@@ -94,28 +70,30 @@ function formIsValid() {
                 <option>Forest</option>
                 <option  <?= ($_GET['category'] == "Sky")?" selected":"" ?> >Sky</option>
             </select>
+            <br><br>
             
-            <input type="submit" name="submitBtn" value="Submit!!" />
+            <input id="layoutDiv" type="submit" name="submitBtn" value="Submit!!" />
             
         </form>
-
-        <!--<h1>You must type a keyword or select a category</h1>-->
-        
+        <br>
         <?php 
-        if (isset($imageURLs) &&  formIsValid() ) { ?>
+        if (isset($imageURLs) &&  formIsValid() ) 
+        { ?>
         
            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <?php
-                  for ($i=1; $i < 9; $i++) { 
+                  for ($i=1; $i < 7; $i++) 
+                  { 
                     echo "<li data-target='#carouselExampleIndicators' data-slide-to='$i'></li>";
                   }
                  ?>
               </ol>
               <div class="carousel-inner">
                 <?php
-                  for ($i = 0; $i < 9; $i++) {
+                  for ($i = 0; $i < 7; $i++) 
+                  {
                       do {
                        $randomIndex = array_rand($imageURLs);  // rand(0, count($imageURLs)-1);
                       }
@@ -140,14 +118,12 @@ function formIsValid() {
             </div>
         
         <?php
-         } //closing if isset($imageURLs)
-         else {
-            
+         }
+         else 
+         {
             echo "<br><h1>Enter a Keyword or Select a Category!</h1>";     
-             
          }
         ?>
-
 
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>

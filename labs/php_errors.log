@@ -1598,3 +1598,7 @@
 [22-Sep-2018 20:29:13 UTC] PHP 254. play() /home/ubuntu/workspace/cst336/labs/lab2/inc/functions.php:14
 [22-Sep-2018 20:29:13 UTC] PHP 255. displayPoints() /home/ubuntu/workspace/cst336/labs/lab2/inc/functions.php:52
 [22-Sep-2018 20:29:13 UTC] PHP 256. play() /home/ubuntu/workspace/cst336/labs/lab2/inc/functions.php:14
+[05-Oct-2018 22:21:16 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/cst336/labs/lab4/index.php on line 101
+[05-Oct-2018 22:21:16 UTC] PHP Stack trace:
+[05-Oct-2018 22:21:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/index.php:0
+[05-Oct-2018 22:21:16 UTC] PHP   2. array_rand() /home/ubuntu/workspace/cst336/labs/lab4/index.php:101
