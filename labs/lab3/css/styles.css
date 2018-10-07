@@ -1,12 +1,12 @@
 
 body {
-    background-image:url("../img/players/bg4.png");
+    background-image:url("../img/players/bg6.png");
     /*background-size:cover;*/
-    color:#44b7be;
-	/*padding: 100px;*/
-	padding-left: 200px;
-	padding-right: 200px;
-    /*color:#d0edef;*/
+    /*color:#44b7be;*/
+	padding: 200px;
+	/*padding-left: 200px;*/
+	/*padding-right: 200px;*/
+    color:#d0edef;
     background-size: contain;
 }
 
@@ -23,7 +23,7 @@ body hr {
     border-style: inset;
     border-width: 4px;
     /*color:#44b7be ;*/
-    /*color:#d0edef ;*/
+    color:#d0edef ;
 
 }
 
@@ -32,7 +32,7 @@ footer div {
 }
 
 footer {
-    position: fixed;
+    /*position: fixed;*/
     bottom: 0px;
     right: 0px;
 }
@@ -46,27 +46,27 @@ footer img {
     float:left;
 }
 
-#layoutDiv
-{
-    opacity: 0.85;
-    display: inline-block;
-    color: black;
-    text-align: left;
-    background-color: white;
-    padding: 10px;
-    border-radius: 25px;
-}
+/*#layoutDiv*/
+/*{*/
+/*    opacity: 0.85;*/
+/*    display: inline-block;*/
+/*    color: black;*/
+/*    text-align: left;*/
+/*    background-color: white;*/
+/*    padding: 10px;*/
+/*    border-radius: 25px;*/
+/*}*/
 
-#layoutDiv2
-{
-    opacity: 0.65;
-    display: inline-block;
-    text-align: left;
-    color: black;
-    background-color: white;
-    padding: 10px;
-    border-radius: 25px;
-}
+/*#layoutDiv2*/
+/*{*/
+    /*opacity: 0.3;*/
+/*    display: inline-block;*/
+/*    text-align: left;*/
+/*    color: black;*/
+/*    background-color: white;*/
+/*    padding: 10px;*/
+/*    border-radius: 25px;*/
+/*}*/
 
 
 .winners{

@@ -18,7 +18,7 @@
         <FORM id="layoutDiv2">
             <a href="#" class="refresh" onClick="history.go(0)">Play Again</a>
         </FORM>
-        <br><br>
+        <!--<br><br>-->
         <div id="layoutDiv2" class="hand">
         <?php
             $start = microtime(true);
@@ -46,12 +46,17 @@
         
         <footer>
             <div id="layoutDiv">
+                <br></br>
+                <br></br>
+                <br></br>
                 CST 336 2018 &copy; Baird, Chi, Hernandez and Anacleto<br/>
                 <strong>Disclaimer:</strong> We did not create any of the characters 
                 on this site. 
                 <br/>All images belong to the Kingdom Hearts franchise and 
                 all rights belong to <br/>Disney and Square Enix.
             </div>
+            <br></br>
+            <br></br>
                 <img src="img/csumblogo.png" alt="CSUMB logo" title="This is the CSUMB logo"/>
         </footer>
     </body>
