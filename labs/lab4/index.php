@@ -128,5 +128,21 @@ function formIsValid()
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
        
+       <footer id = layoutDiv>
+            <hr id="hr100"/>
+            <small>
+            CST 336 2018 &copy; Baird <br/>
+            
+            <strong>Disclaimer:</strong> I did not create any of the pictures on this site. All images are taken from pixabay.com and all rights belong to them.
+            <br/><br/>
+            The information displayed on this page for academic purposes only. <br/>
+            <br/>
+            <img src="../../img/csumb_logo.jpg" alt="CSUMB logo" title="This is
+            the CSUMB logo"/>
+            <img src="../../img/buddy_verified.png" alt="Buddy Verified" 
+            title="This is the buddy verification badge"/>
+            </small>
+        </footer>
+       
     </body>
 </html>
