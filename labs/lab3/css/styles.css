@@ -2,9 +2,11 @@
 body {
     background-image:url("../img/players/bg4.png");
     /*background-size:cover;*/
-    /*color:#44b7be;*/
-	padding: 200px;
-    color:#d0edef;
+    color:#44b7be;
+	/*padding: 100px;*/
+	padding-left: 200px;
+	padding-right: 200px;
+    /*color:#d0edef;*/
     background-size: contain;
 }
 
@@ -21,7 +23,7 @@ body hr {
     border-style: inset;
     border-width: 4px;
     /*color:#44b7be ;*/
-    color:#d0edef ;
+    /*color:#d0edef ;*/
 
 }
 
@@ -60,6 +62,7 @@ footer img {
     opacity: 0.65;
     display: inline-block;
     text-align: left;
+    color: black;
     background-color: white;
     padding: 10px;
     border-radius: 25px;
@@ -74,10 +77,10 @@ footer img {
 
 .hand {
     float:none;
+    text-align: center;
     background-color: rgba(255, 255,255, 0.2);
     border-radius: 25px;
-    text-align: left;
-    
+
 }
 .refresh{
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #007dc1), color-stop(1, #0061a7));

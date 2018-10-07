@@ -11,9 +11,6 @@
             @import url("css/styles.css");
         </style>
     </head>
-    <header>
-        
-    </header>
     
     <body>
         <h1>Super Silver Jack!! Kingdom Hearts Style!! <hr></h1>
