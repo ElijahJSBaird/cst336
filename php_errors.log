@@ -1,0 +1,4 @@
+[15-Oct-2018 20:39:01 UTC] PHP Fatal error:  Call to undefined function usfirst() in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 54
+[15-Oct-2018 20:39:01 UTC] PHP Stack trace:
+[15-Oct-2018 20:39:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[15-Oct-2018 20:39:01 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:149

@@ -1602,3 +1602,171 @@
 [05-Oct-2018 22:21:16 UTC] PHP Stack trace:
 [05-Oct-2018 22:21:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/index.php:0
 [05-Oct-2018 22:21:16 UTC] PHP   2. array_rand() /home/ubuntu/workspace/cst336/labs/lab4/index.php:101
+[10-Oct-2018 21:59:08 UTC] PHP Warning:  Illegal string offset 'catDescription' in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 18
+[10-Oct-2018 21:59:08 UTC] PHP Stack trace:
+[10-Oct-2018 21:59:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/index.php:0
+[10-Oct-2018 22:00:24 UTC] PHP Warning:  Illegal string offset 'catDescription' in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 18
+[10-Oct-2018 22:00:24 UTC] PHP Stack trace:
+[10-Oct-2018 22:00:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/index.php:0
+[10-Oct-2018 22:00:24 UTC] PHP Warning:  Illegal string offset 'catName' in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 21
+[10-Oct-2018 22:00:24 UTC] PHP Stack trace:
+[10-Oct-2018 22:00:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/index.php:0
+[10-Oct-2018 22:00:24 UTC] PHP Warning:  Illegal string offset 'catName' in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 21
+[10-Oct-2018 22:00:24 UTC] PHP Stack trace:
+[10-Oct-2018 22:00:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/index.php:0
+[10-Oct-2018 22:00:24 UTC] PHP Warning:  Illegal string offset 'catName' in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 21
+[10-Oct-2018 22:00:24 UTC] PHP Stack trace:
+[10-Oct-2018 22:00:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/index.php:0
+[10-Oct-2018 22:00:24 UTC] PHP Warning:  Illegal string offset 'catName' in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 21
+[10-Oct-2018 22:00:24 UTC] PHP Stack trace:
+[10-Oct-2018 22:00:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/index.php:0
+[10-Oct-2018 22:00:24 UTC] PHP Warning:  Illegal string offset 'catName' in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 21
+[10-Oct-2018 22:00:24 UTC] PHP Stack trace:
+[10-Oct-2018 22:00:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/index.php:0
+[10-Oct-2018 22:00:24 UTC] PHP Warning:  Illegal string offset 'catName' in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 21
+[10-Oct-2018 22:00:24 UTC] PHP Stack trace:
+[10-Oct-2018 22:00:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/index.php:0
+[10-Oct-2018 22:07:43 UTC] PHP Warning:  include(dbConnectionphp): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 2
+[10-Oct-2018 22:07:43 UTC] PHP Stack trace:
+[10-Oct-2018 22:07:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/index.php:0
+[10-Oct-2018 22:07:43 UTC] PHP Warning:  include(): Failed opening 'dbConnectionphp' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 2
+[10-Oct-2018 22:07:43 UTC] PHP Stack trace:
+[10-Oct-2018 22:07:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/index.php:0
+[10-Oct-2018 22:07:43 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 7
+[10-Oct-2018 22:07:43 UTC] PHP Stack trace:
+[10-Oct-2018 22:07:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/index.php:0
+[10-Oct-2018 22:07:43 UTC] PHP   2. displayCatagories() /home/ubuntu/workspace/cst336/labs/lab6/index.php:35
+[10-Oct-2018 22:08:37 UTC] PHP Warning:  include(dbConnectionphp): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 2
+[10-Oct-2018 22:08:37 UTC] PHP Stack trace:
+[10-Oct-2018 22:08:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/index.php:0
+[10-Oct-2018 22:08:37 UTC] PHP Warning:  include(): Failed opening 'dbConnectionphp' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 2
+[10-Oct-2018 22:08:37 UTC] PHP Stack trace:
+[10-Oct-2018 22:08:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/index.php:0
+[10-Oct-2018 22:08:37 UTC] PHP Fatal error:  Call to undefined function startConnection() in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 4
+[10-Oct-2018 22:08:37 UTC] PHP Stack trace:
+[10-Oct-2018 22:08:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/index.php:0
+[10-Oct-2018 22:10:15 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 14
+[10-Oct-2018 22:10:15 UTC] PHP Stack trace:
+[10-Oct-2018 22:10:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/index.php:0
+[10-Oct-2018 22:12:11 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 14
+[10-Oct-2018 22:12:11 UTC] PHP Stack trace:
+[10-Oct-2018 22:12:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/index.php:0
+[10-Oct-2018 22:19:06 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'productName' in 'order clause'' in /home/ubuntu/workspace/cst336/labs/lab6/index.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/index.php(10): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst336/labs/lab6/index.php(42): displayCatagories()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 10
+[10-Oct-2018 22:40:55 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':: OR 
+            productDescription LIKE ::' at line 2' in /home/ubuntu/workspace/cst336/labs/lab6/index.php:34
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/index.php(34): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst336/labs/lab6/index.php(65): filterProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 34
+[10-Oct-2018 22:41:14 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ': OR 
+            productDescription LIKE :' at line 2' in /home/ubuntu/workspace/cst336/labs/lab6/index.php:34
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/index.php(34): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst336/labs/lab6/index.php(65): filterProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 34
+[10-Oct-2018 22:41:26 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: no parameters were bound' in /home/ubuntu/workspace/cst336/labs/lab6/index.php:34
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/index.php(34): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst336/labs/lab6/index.php(65): filterProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 34
+[10-Oct-2018 22:41:34 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: no parameters were bound' in /home/ubuntu/workspace/cst336/labs/lab6/index.php:33
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/index.php(33): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst336/labs/lab6/index.php(64): filterProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 33
+[10-Oct-2018 22:43:24 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: no parameters were bound' in /home/ubuntu/workspace/cst336/labs/lab6/index.php:39
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/index.php(39): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst336/labs/lab6/index.php(70): filterProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 39
+[15-Oct-2018 22:16:28 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0' at line 1' in /home/ubuntu/workspace/cst336/labs/lab6/index.php:51
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/index.php(51): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/labs/lab6/index.php(79): filterProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 51
+[15-Oct-2018 22:18:31 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0' at line 1' in /home/ubuntu/workspace/cst336/labs/lab6/index.php:56
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/index.php(56): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/labs/lab6/index.php(89): filterProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 56
+[15-Oct-2018 22:18:40 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0' at line 1' in /home/ubuntu/workspace/cst336/labs/lab6/index.php:56
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/index.php(56): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/labs/lab6/index.php(89): filterProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 56
+[15-Oct-2018 22:20:53 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0' at line 1' in /home/ubuntu/workspace/cst336/labs/lab6/index.php:51
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/index.php(51): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/labs/lab6/index.php(80): filterProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 51
+[15-Oct-2018 22:27:35 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0' at line 1' in /home/ubuntu/workspace/cst336/labs/lab6/index.php:56
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/index.php(56): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/labs/lab6/index.php(89): filterProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 56
+[15-Oct-2018 22:30:31 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0' at line 1' in /home/ubuntu/workspace/cst336/labs/lab6/index.php:51
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/index.php(51): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/labs/lab6/index.php(80): filterProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 51
+[15-Oct-2018 22:31:37 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0' at line 1' in /home/ubuntu/workspace/cst336/labs/lab6/index.php:51
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/index.php(51): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/labs/lab6/index.php(80): filterProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 51
+[15-Oct-2018 22:31:40 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0' at line 1' in /home/ubuntu/workspace/cst336/labs/lab6/index.php:51
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/index.php(51): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/labs/lab6/index.php(80): filterProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 51
+[15-Oct-2018 22:32:22 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0' at line 1' in /home/ubuntu/workspace/cst336/labs/lab6/index.php:51
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/index.php(51): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/labs/lab6/index.php(80): filterProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 51
+[15-Oct-2018 22:32:28 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0' at line 1' in /home/ubuntu/workspace/cst336/labs/lab6/index.php:51
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/index.php(51): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/labs/lab6/index.php(80): filterProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 51
+[15-Oct-2018 22:33:16 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0' at line 1' in /home/ubuntu/workspace/cst336/labs/lab6/index.php:51
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/index.php(51): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/labs/lab6/index.php(80): filterProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 51
+[15-Oct-2018 22:33:27 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0' at line 1' in /home/ubuntu/workspace/cst336/labs/lab6/index.php:51
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/index.php(51): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/labs/lab6/index.php(80): filterProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 51
+[15-Oct-2018 22:34:08 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0' at line 1' in /home/ubuntu/workspace/cst336/labs/lab6/index.php:51
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/index.php(51): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/labs/lab6/index.php(80): filterProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 51
+[15-Oct-2018 22:46:09 UTC] PHP Fatal error:  Call to undefined function displayCatagories() in /home/ubuntu/workspace/cst336/labs/lab6/index.php on line 74
+[15-Oct-2018 22:46:09 UTC] PHP Stack trace:
+[15-Oct-2018 22:46:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/index.php:0

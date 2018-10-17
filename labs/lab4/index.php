@@ -59,8 +59,8 @@ function formIsValid()
             <div id="layoutDiv">
                 <input type="radio" name="layout" value="horizontal" id="layout_h">
                 <label for="layout_h"> Horizontal </label><br>
-                 <input type="radio" name="layout" value="vertical" id="layout_v">
-                 <label for="layout_v"> Vertical </label><br>
+                <input type="radio" name="layout" value="vertical" id="layout_v">
+                <label for="layout_v"> Vertical </label><br>
             </div>
             <br>
             <select name="category">

@@ -1,0 +1,32 @@
+body
+{
+    text-align: center;
+    font-size: x-large;
+}
+h1 
+{
+    font-size: 63px;
+    font-weight: bold;
+}
+#title
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: lightGray;
+}
+#layout
+{
+    font-weight: bold;
+}
+
+table, th, td 
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+#error
+{
+    font-size: 35px;
+    font-weight: bold;
+    color: red;
+}
