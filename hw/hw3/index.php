@@ -75,6 +75,18 @@ if ($done == 4 && isset($_GET["submitBtn"]))
     echo "<h1>Score: ".$total."/5</h1>";
 }
 
+function wasChecked($name)
+{
+    if ($_GET[$name])
+    {
+        echo '<input type="checkbox" name="'.$name.'" checked="checked"/>';
+    }
+    else
+    {
+        echo '<input type="checkbox" name="'.$name.'"';
+    }
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -238,18 +250,67 @@ if ($done == 4 && isset($_GET["submitBtn"]))
                     echo '
                         <h3>3. Which of these workers are from accounting?</h3>
                         Angela 
-                        <input type="checkbox" name="angela"/>
-                        Andy 
-                        <input type="checkbox" name="andy"/>
-                        Oscar 
-                        <input type="checkbox" name="oscar"/>
+                        ';
+                        if ($_GET["angela"])
+                        {
+                            echo '<input type="checkbox" name="angela" checked="checked"/>';
+                        }
+                        else
+                        {
+                            echo '<input type="checkbox" name="angela"/>';
+                        }
+                    echo '
+                        Andy';
+                        if ($_GET["andy"])
+                        {
+                            echo '<input type="checkbox" name="andy" checked="checked"/>';
+                        }
+                        else
+                        {
+                            echo '<input type="checkbox" name="andy"/>';
+                        }
+                    echo '
+                        Oscar';
+                        if ($_GET["oscar"])
+                        {
+                            echo '<input type="checkbox" name="oscar" checked="checked"/>';
+                        }
+                        else
+                        {
+                            echo '<input type="checkbox" name="oscar"/>';
+                        }
+                    echo '
                         <br><br>
-                        Kevin 
-                        <input type="checkbox" name="kevin"/>
-                        Ryan 
-                        <input type="checkbox" name="ryan"/>
-                        Kelly 
-                        <input type="checkbox" name="kelly"/>
+                        Kevin';
+                        if ($_GET["kevin"])
+                        {
+                            echo '<input type="checkbox" name="kevin" checked="checked"/>';
+                        }
+                        else
+                        {
+                            echo '<input type="checkbox" name="kevin"/>';
+                        }
+                    echo '
+                        Ryan';
+                        if ($_GET["ryan"])
+                        {
+                            echo '<input type="checkbox" name="ryan" checked="checked"/>';
+                        }
+                        else
+                        {
+                            echo '<input type="checkbox" name="ryan"/>';
+                        }
+                    echo '
+                        Kelly';
+                        if ($_GET["kelly"])
+                        {
+                            echo '<input type="checkbox" name="kelly" checked="checked"/>';
+                        }
+                        else
+                        {
+                            echo '<input type="checkbox" name="kelly"/>';
+                        }
+                    echo '
                     </div>
                     <br><br>
                     <div id="question4">';
@@ -263,7 +324,7 @@ if ($done == 4 && isset($_GET["submitBtn"]))
                     }
                     echo '
                         <h3>4. How many seasons of the show are there?</h3>
-                        <input type="number" name="q4" min="1" max="10"/>
+                        <input type="number" name="q4" min="1" max="10" value="'.$_GET["q4"].'"/>
                     </div>
                     <br><br>
                     <div id="question5">';
@@ -275,18 +336,27 @@ if ($done == 4 && isset($_GET["submitBtn"]))
                     {
                         echo "<img src=\"img/green_check.png\" alt=\"A A green check mark\" width=\"30px\">";
                     }
+                    
+                    
+                    
+                    
                     echo '
                         <h3>5. Who does Jim prank the most?</h3>
-                        <select name="q5">
-                            <option value=""> Select One </option>
-                            <option value="pam">Pam</option>
-                            <option value="dwight">Dwight</option>
-                            <option value="phyllis">Phyllis</option>
-                            <option value="stanley">Stanley</option>
-                            <option value="creed">Creed</option>
-                            <option value="meredith">Meredith</option>
-                            <option value="toby">Toby</option>
-                            <option value="darryl">Darryl</option>
+                        <select name="q5">';
+                        $names = array("pam", "dwight", "phyllis", "stanley", "creed", "meredith", "toby", "darrly");
+                        for ($i = 0; $i < 8; $i++)
+                        {
+                            if ($_GET["q5"] == $names[$i])
+                            {
+                                echo '<option value="'.$names[$i].'">'.ucfirst($names[$i]).'</option>';
+                                array_splice($names, $i, 1);
+                            }
+                        }
+                        for ($i = 0; $i < 7; $i++)
+                        {
+                            echo '<option value="'.$names[$i].'">'.ucfirst($names[$i]).'</option>';
+                        }
+                    echo '
                         </select>
                     </div>
                     <br><br>
