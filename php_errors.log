@@ -2,3 +2,70 @@
 [15-Oct-2018 20:39:01 UTC] PHP Stack trace:
 [15-Oct-2018 20:39:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
 [15-Oct-2018 20:39:01 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:149
+[19-Oct-2018 22:52:27 UTC] PHP Warning:  include(function.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/scart/index.php on line 3
+[19-Oct-2018 22:52:27 UTC] PHP Stack trace:
+[19-Oct-2018 22:52:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/scart/index.php:0
+[19-Oct-2018 22:52:27 UTC] PHP Warning:  include(): Failed opening 'function.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/scart/index.php on line 3
+[19-Oct-2018 22:52:27 UTC] PHP Stack trace:
+[19-Oct-2018 22:52:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/scart/index.php:0
+[19-Oct-2018 22:53:01 UTC] PHP Warning:  include(function.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/scart/index.php on line 3
+[19-Oct-2018 22:53:01 UTC] PHP Stack trace:
+[19-Oct-2018 22:53:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/scart/index.php:0
+[19-Oct-2018 22:53:01 UTC] PHP Warning:  include(): Failed opening 'function.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/scart/index.php on line 3
+[19-Oct-2018 22:53:01 UTC] PHP Stack trace:
+[19-Oct-2018 22:53:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/scart/index.php:0
+[19-Oct-2018 22:53:02 UTC] PHP Fatal error:  Call to undefined function displayResults() in /home/ubuntu/workspace/cst336/scart/index.php on line 53
+[19-Oct-2018 22:53:02 UTC] PHP Stack trace:
+[19-Oct-2018 22:53:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/scart/index.php:0
+[19-Oct-2018 22:53:56 UTC] PHP Warning:  include(function.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/scart/index.php on line 3
+[19-Oct-2018 22:53:56 UTC] PHP Stack trace:
+[19-Oct-2018 22:53:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/scart/index.php:0
+[19-Oct-2018 22:53:56 UTC] PHP Warning:  include(): Failed opening 'function.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/scart/index.php on line 3
+[19-Oct-2018 22:53:56 UTC] PHP Stack trace:
+[19-Oct-2018 22:53:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/scart/index.php:0
+[19-Oct-2018 22:53:57 UTC] PHP Fatal error:  Call to undefined function displayResults() in /home/ubuntu/workspace/cst336/scart/index.php on line 53
+[19-Oct-2018 22:53:57 UTC] PHP Stack trace:
+[19-Oct-2018 22:53:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/scart/index.php:0
+[19-Oct-2018 23:18:41 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/scart/index.php on line 25
+[19-Oct-2018 23:18:41 UTC] PHP Stack trace:
+[19-Oct-2018 23:18:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/scart/index.php:0
+[19-Oct-2018 23:18:41 UTC] PHP   2. array_push() /home/ubuntu/workspace/cst336/scart/index.php:25
+[19-Oct-2018 23:18:51 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/scart/index.php on line 25
+[19-Oct-2018 23:18:51 UTC] PHP Stack trace:
+[19-Oct-2018 23:18:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/scart/index.php:0
+[19-Oct-2018 23:18:51 UTC] PHP   2. array_push() /home/ubuntu/workspace/cst336/scart/index.php:25
+[19-Oct-2018 23:21:03 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/scart/index.php on line 25
+[19-Oct-2018 23:21:03 UTC] PHP Stack trace:
+[19-Oct-2018 23:21:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/scart/index.php:0
+[19-Oct-2018 23:21:03 UTC] PHP   2. array_push() /home/ubuntu/workspace/cst336/scart/index.php:25
+[19-Oct-2018 23:21:14 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/scart/index.php on line 25
+[19-Oct-2018 23:21:14 UTC] PHP Stack trace:
+[19-Oct-2018 23:21:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/scart/index.php:0
+[19-Oct-2018 23:21:14 UTC] PHP   2. array_push() /home/ubuntu/workspace/cst336/scart/index.php:25
+[19-Oct-2018 23:22:47 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/scart/index.php on line 25
+[19-Oct-2018 23:22:47 UTC] PHP Stack trace:
+[19-Oct-2018 23:22:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/scart/index.php:0
+[19-Oct-2018 23:22:47 UTC] PHP   2. array_push() /home/ubuntu/workspace/cst336/scart/index.php:25
+[19-Oct-2018 23:22:50 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/scart/index.php on line 25
+[19-Oct-2018 23:22:50 UTC] PHP Stack trace:
+[19-Oct-2018 23:22:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/scart/index.php:0
+[19-Oct-2018 23:22:50 UTC] PHP   2. array_push() /home/ubuntu/workspace/cst336/scart/index.php:25
+[19-Oct-2018 23:28:09 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/scart/index.php on line 25
+[19-Oct-2018 23:28:09 UTC] PHP Stack trace:
+[19-Oct-2018 23:28:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/scart/index.php:0
+[19-Oct-2018 23:28:09 UTC] PHP   2. array_push() /home/ubuntu/workspace/cst336/scart/index.php:25
+[19-Oct-2018 23:28:36 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/scart/index.php on line 25
+[19-Oct-2018 23:28:36 UTC] PHP Stack trace:
+[19-Oct-2018 23:28:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/scart/index.php:0
+[19-Oct-2018 23:28:36 UTC] PHP   2. array_push() /home/ubuntu/workspace/cst336/scart/index.php:25
+[19-Oct-2018 23:29:00 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/scart/index.php on line 25
+[19-Oct-2018 23:29:00 UTC] PHP Stack trace:
+[19-Oct-2018 23:29:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/scart/index.php:0
+[19-Oct-2018 23:29:00 UTC] PHP   2. array_push() /home/ubuntu/workspace/cst336/scart/index.php:25
+[19-Oct-2018 23:30:03 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/scart/index.php on line 25
+[19-Oct-2018 23:30:03 UTC] PHP Stack trace:
+[19-Oct-2018 23:30:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/scart/index.php:0
+[19-Oct-2018 23:30:03 UTC] PHP   2. array_push() /home/ubuntu/workspace/cst336/scart/index.php:25
+[19-Oct-2018 23:33:13 UTC] PHP Fatal error:  Call to undefined function displayCart() in /home/ubuntu/workspace/cst336/scart/scart.php on line 32
+[19-Oct-2018 23:33:13 UTC] PHP Stack trace:
+[19-Oct-2018 23:33:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/scart/scart.php:0

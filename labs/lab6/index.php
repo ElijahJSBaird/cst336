@@ -29,8 +29,7 @@ function filterProducts() {
     //This SQL works but it doesn't prevent SQL INJECTION (due to the single quotes)
     //$sql = "SELECT * FROM om_product
     //        WHERE productName LIKE '%$product%'";
-    
-
+  
     $sql = "SELECT * FROM om_product WHERE 1"; //Gettting all records from database
     
     if (!empty($product)){
@@ -63,7 +62,17 @@ function filterProducts() {
     $stmt = $dbConn->prepare($sql);
     $stmt->execute($namedParameters);
     $records = $stmt->fetchAll(PDO::FETCH_ASSOC);  
-    print_r($records);
+    //print_r($records);
+    
+    
+    foreach ($records as $record) {
+        
+        echo "<a href='productInfo.php?productId=".$record['productId']."'>";
+        echo $record['productName'];
+        echo "</a> ";
+        echo $record['productDescription'] . " $" .  $record['price'] .   "<br>";   
+        
+    }
 
 
 }
@@ -92,16 +101,20 @@ function filterProducts() {
             
             Price: From: <input type="text" name="priceFrom"  /> 
              To: <input type="text" name="priceTo"  />
-            
+            <br>
             Order By:
             Price <input type="radio" name="orderBy" value="productPrice">
             Name <input type="radio" name="orderBy" value="productName">
-            
+            <br>
             <input type="submit" name="submit" value="Search!"/>
         </form>
-        
+        <br>
+        <hr>
         
         <?= filterProducts() ?>
+        
+    
+
 
     </body>
 </html>
