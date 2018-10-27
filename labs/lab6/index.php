@@ -58,22 +58,30 @@ function filterProducts() {
         
         
     }
+    
+    if (!empty($_GET["priceFrom"])) {
+        $sql .= " AND price >= :priceFrom";
+        $namedParameters[":priceFrom"] = $_GET["priceFrom"];
+    }
+    
+    if (!empty($_GET["priceTo"])) {
+        $sql .= " AND price <= :priceTo";
+        $namedParameters[":priceTo"] = $_GET["priceTo"];
+    }
 
     $stmt = $dbConn->prepare($sql);
     $stmt->execute($namedParameters);
     $records = $stmt->fetchAll(PDO::FETCH_ASSOC);  
-    //print_r($records);
-    
+
     
     foreach ($records as $record) {
         
-        echo "<a href='productInfo.php?productId=".$record['productId']."'>";
-        echo $record['productName'];
-        echo "</a> ";
-        echo $record['productDescription'] . " $" .  $record['price'] .   "<br>";   
+        echo "<a href='purchaseHistory.php?productId=".$record['productId']."'> History </a>";
+        echo $record['productName']." ".$record['productDescription']." $". $record['price']."<br><br>";   
         
     }
 
+    
 
 }
 
@@ -85,12 +93,22 @@ function filterProducts() {
         <title> Lab 6: Ottermart Product Search</title>
     </head>
     <body>
+        <style type="text/css">
+            form, h1, h2
+            {
+                text-align: center;
+            }
+            form
+            {
+                border: solid;
+                border-radius: 4px;
+                border-color: #275399;
+            }
+        </style>
         
-        <h1> Ottermart </h1>
-        <h2> Product Search </h2>
         
         <form>
-            
+            <h1> OtterMart Product Search </h1>
             Product: <input type="text" name="productName" placeholder="Product keyword" /> <br />
             
             Category: 
@@ -98,19 +116,23 @@ function filterProducts() {
                <option value=""> Select one </option>  
                <?=displayCategories()?>
             </select>
-            
-            Price: From: <input type="text" name="priceFrom"  /> 
-             To: <input type="text" name="priceTo"  />
+            <br>
+            Price: From: <input type="text" name="priceFrom" size="10"/> 
+             To: <input type="text" name="priceTo" size="10"/>
             <br>
             Order By:
-            Price <input type="radio" name="orderBy" value="productPrice">
-            Name <input type="radio" name="orderBy" value="productName">
+            <br>
+            <input type="radio" name="orderBy" value="productPrice"> Price
+            <br>
+            <input type="radio" name="orderBy" value="productName"> Name 
+            <br>
+            <!--Product: <input type="text" name="product"/>-->
             <br>
             <input type="submit" name="submit" value="Search!"/>
+            <br><br>
         </form>
-        <br>
         <hr>
-        
+        <h3>Products Found: </h3>
         <?= filterProducts() ?>
         
     

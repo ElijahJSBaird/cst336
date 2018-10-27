@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+}
+
+td {
+    border: 1px solid black;
+    width:100px;
+    height:100px;
+}
+img {
+    width: 50%;
+    height: 50%;
+}

@@ -4,6 +4,9 @@ $nov = array();
 $dec = array();
 $jan = array();
 $feb = array();
+$france = array("bordeaux", "le_havre", "lyon", "montpellier", "paris", "strasbourg");
+$mexico = array("acapulco", "cabos", "cancun", "chichenitza", "huatulco", "mexico_city");
+$usa = array("chicago", "hollywood", "las_vegas", "ny", "washington_dc", "yosemite");
 
 for ($i = 1; $i <= 31; $i++)
 {
@@ -29,17 +32,25 @@ for ($i = 1; $i <= 31; $i++)
 
 function generateTable()
 {
+    global $nov, $dec, $jan, $feb, $france, $mexico, $usa;
+    
     $input = $_GET["month"];
-    switch($_GET["locations"])
+    $placesNum = 0;
+    if($_GET["locations"] == "three")
     {
-        case "":
-            $places = 0;
-        case "three":
-            $places = 3;
-        case "four":
-            $places = 4;
-        case "five":
-            $places = 5;
+        $placesNum = 3;
+    }
+    else if ($_GET["locations"] == "four")
+    {
+        $placesNum = 4;
+    }
+    else if ($_GET["locations"] == "five")
+    {
+        $placesNum = 5;
+    }
+    else
+    {
+        $placesNum = 0;
     }
     $places = $_GET["locations"];
     $country = $_GET["country"];
@@ -62,13 +73,47 @@ function generateTable()
         $month = $dec;
     }
     
-    
+    // $month is number of days in month
+    // $input is name of month
     
     if (($input != "") && (isset($_GET["locations"])))
     {
-        echo "<hr>".ucfirst($input)." Itinerary<br>
-        Visiting ".$places." places in ".$country."
-        <br><table align='center'>";
+        if ($country == "usa")
+        {
+            echo "<hr>".ucfirst($input)." Itinerary<br>
+            Visiting ".$places." places in USA
+            <br><table align='center'>";
+        }
+        else
+        {
+            echo "<hr>".ucfirst($input)." Itinerary<br>
+            Visiting ".$places." places in ".ucfirst($country)."
+            <br>
+            <table align='center'>";
+        } 
+        $days = $month;
+        
+        $randDay = array();
+        $counter = 0;
+
+        for ($i = 0; $i < 5; $i++)
+        {
+            $randDay[$i] = $days[rand(1, sizeof($days) - 1)];
+            unset($days[$randDay[$i]]);
+            $days = array_values($days);
+        }
+        sort($randDay);
+        printf($randDay[0]);
+        echo "<br>";
+        printf($randDay[1]);
+        echo "<br>";
+        printf($randDay[2]);
+        echo "<br>";
+        printf($randDay[3]);
+        echo "<br>";
+        printf($randDay[4]);
+        echo "<br>";
+        
         for ($i = 0; $i < 5; $i++)
         {
             echo "<tr>";
@@ -78,7 +123,42 @@ function generateTable()
             }
             for ($j = $i * 7; $j < ($i * 7) + 7; $j++)
             {
-                echo "<td>".$month[$j]."</td>";
+                
+                echo "<td id='calender'>".$month[$j]."<br>";
+                if ($month[$j] == $randDay[$counter] && $placesNum > 0)
+                {
+                    printf($placesNum);
+                    if ($country == "usa")
+                    {
+                        $randImg = rand(0, sizeof($usa) - 1);
+                        echo "<img src='img/USA/".$usa[$randImg];
+                        unset($usa[$randImg]);
+                        $usa = array_values($usa);
+                    }
+                    else
+                    {
+                        echo "<img src='img/".ucfirst($country)."/";
+                    }
+                    if ($country == "france")
+                    {
+                        $randImg = rand(0, sizeof($france));
+                        echo $france[$randImg];
+                        unset($france[$randImg]);
+                        $france = array_values($france);
+                    }
+                    else if ($country == "mexico")
+                    {
+                        $randImg = rand(0, sizeof($mexico));
+                        echo $mexico[$randImg];
+                        unset($mexico[$randImg]);
+                        $mexico = array_values($mexico);
+                    }
+                    
+                    echo ".png' width='150' alt='info'>";
+                    $placesNum -= 1;
+                    $counter += 1;
+                }
+                echo "</td>";
             }
             echo "</tr>";
         }
@@ -92,6 +172,7 @@ function generateTable()
     {
         echo "<div id='error'> You must specify the number of locations!</div><br>";
     }
+    
 }
 
 
@@ -119,7 +200,7 @@ function generateTable()
                 <option value="february">February</option>
             </select>
             <a href="#" data-toggle="tooltip" title="There are 4 months listed, from November to February. No month selected by default.">
-                <!--<img src="info.png" width="15" alt="info">-->info
+                <img src="img/info.png" width="15" alt="info">
             </a>
             <br><br>
             
@@ -132,7 +213,7 @@ function generateTable()
                 <input type="radio" name="locations" value="five" id="layout_five">
                 <label for="layout_five"> Five </label>
                 <a href="#" data-toggle="tooltip" title="No number selected by default.">
-                    <!--<img src="info.png" width="15" alt="info">-->info
+                    <img src="img/info.png" width="15" alt="info">
                 </a>
             </div>
             
@@ -144,7 +225,7 @@ function generateTable()
                 <option value="france">France</option>
             </select>
             <a href="#" data-toggle="tooltip" title="USA is selected by default.">
-                <!--<img src="info.png" width="15" alt="info">-->info
+                <img src="img/info.png" width="15" alt="info">
             </a>
             <br><br>
             
@@ -155,14 +236,14 @@ function generateTable()
                 <input type="radio" name="order" value="ztoa" id="z_a">
                 <label for="z_a"> Z-A </label>
                 <a href="#" data-toggle="tooltip" title="Users can leave it blank. If checked, the random locations should be ordered alphabetically">
-                    <!--<img src="info.png" width="15" alt="info">-->info
+                    <img src="img/info.png" width="15" alt="info">
                 </a>
             </div>
             <br>
             
             <input type="submit" value="Create Itinerary">
             <a href="#" data-toggle="tooltip" title="Errors displayed if no month and number of locations submitted.">
-                <!--<img src="info.png" width="15" alt="info">-->info
+                <img src="img/info.png" width="15" alt="info">
             </a>
         </form>
         
@@ -177,32 +258,32 @@ function generateTable()
           
         <table border="1" width="600">
         <tbody><tr><th>#</th><th>Task Description</th><th>Points</th></tr>
-        <tr style="background-color:#FFC0C0">
+        <tr style="background-color:lime">
           <td>1</td>
           <td>The page includes the form elements as the Program Sample: dropdown menu, radio buttons, etc.</td>
           <td width="20" align="center">5</td>
         </tr>
-        <tr style="background-color:#FFC0C0">
+        <tr style="background-color:lime">
           <td>2</td>
           <td>Errors are displayed if month or number of locations are not submitted.</td>
           <td width="20" align="center">5</td>
         </tr> 
-        <tr style="background-color:#FFC0C0">
+        <tr style="background-color:lime">
           <td>3</td>
           <td>Header and Subheader are displayed with info submitted. </td>
           <td align="center">5</td>
         </tr>    
-    	<tr style="background-color:#FFC0C0">
+    	<tr style="background-color:lime">
           <td>4</td>
           <td>A table with days and weeks is displayed when submitting the form</td>
           <td align="center">5</td>
         </tr> 
-        <tr style="background-color:#FFC0C0">
+        <tr style="background-color:lime">
           <td>5</td>
           <td>The number of days in the table correspond to the month selected</td>
           <td align="center">10</td>
         </tr>
-        <tr style="background-color:#FFC0C0">
+        <tr style="background-color:lime">
           <td>6</td>
           <td>Random images are displayed in random days</td>
           <td align="center">5</td>
@@ -241,7 +322,7 @@ function generateTable()
          <tr>
           <td></td>
           <td>T O T A L </td>
-          <td width="20" align="center"><b></b></td>
+          <td width="20" align="center"><b></b>30</td>
         </tr> 
       </tbody></table>
 

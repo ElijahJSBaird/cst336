@@ -69,3 +69,278 @@
 [19-Oct-2018 23:33:13 UTC] PHP Fatal error:  Call to undefined function displayCart() in /home/ubuntu/workspace/cst336/scart/scart.php on line 32
 [19-Oct-2018 23:33:13 UTC] PHP Stack trace:
 [19-Oct-2018 23:33:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/scart/scart.php:0
+[22-Oct-2018 19:23:18 UTC] PHP Warning:  include(../../inc/dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/practice/midterm_practice2.php on line 3
+[22-Oct-2018 19:23:18 UTC] PHP Stack trace:
+[22-Oct-2018 19:23:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice2.php:0
+[22-Oct-2018 19:23:18 UTC] PHP Warning:  include(): Failed opening '../../inc/dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/practice/midterm_practice2.php on line 3
+[22-Oct-2018 19:23:18 UTC] PHP Stack trace:
+[22-Oct-2018 19:23:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice2.php:0
+[22-Oct-2018 19:23:18 UTC] PHP Fatal error:  Call to undefined function startConnection() in /home/ubuntu/workspace/cst336/practice/midterm_practice2.php on line 4
+[22-Oct-2018 19:23:18 UTC] PHP Stack trace:
+[22-Oct-2018 19:23:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice2.php:0
+[22-Oct-2018 19:26:40 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'midterm.om_product' doesn't exist' in /home/ubuntu/workspace/cst336/practice/midterm_practice2.php:66
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/midterm_practice2.php(66): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/practice/midterm_practice2.php(111): filterProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/midterm_practice2.php on line 66
+[22-Oct-2018 19:27:54 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'midterm.om_product' doesn't exist' in /home/ubuntu/workspace/cst336/practice/midterm_practice2.php:66
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/midterm_practice2.php(66): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/practice/midterm_practice2.php(110): filterProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/midterm_practice2.php on line 66
+[22-Oct-2018 19:28:05 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'midterm.om_product' doesn't exist' in /home/ubuntu/workspace/cst336/practice/midterm_practice2.php:66
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/midterm_practice2.php(66): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/practice/midterm_practice2.php(110): filterProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/midterm_practice2.php on line 66
+[22-Oct-2018 19:36:01 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY population' at line 1' in /home/ubuntu/workspace/cst336/practice/midterm_practice2.php:67
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/midterm_practice2.php(67): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/practice/midterm_practice2.php(111): filterPopulation()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/midterm_practice2.php on line 67
+[23-Oct-2018 18:44:48 UTC] PHP Warning:  array_values() expects parameter 1 to be array, integer given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 106
+[23-Oct-2018 18:44:48 UTC] PHP Stack trace:
+[23-Oct-2018 18:44:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 18:44:48 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:220
+[23-Oct-2018 18:44:48 UTC] PHP   3. array_values() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:106
+[23-Oct-2018 18:47:08 UTC] PHP Warning:  array_values() expects parameter 1 to be array, integer given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 106
+[23-Oct-2018 18:47:08 UTC] PHP Stack trace:
+[23-Oct-2018 18:47:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 18:47:08 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:220
+[23-Oct-2018 18:47:08 UTC] PHP   3. array_values() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:106
+[23-Oct-2018 18:47:08 UTC] PHP Warning:  array_values() expects parameter 1 to be array, integer given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 106
+[23-Oct-2018 18:47:08 UTC] PHP Stack trace:
+[23-Oct-2018 18:47:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 18:47:08 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:220
+[23-Oct-2018 18:47:08 UTC] PHP   3. array_values() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:106
+[23-Oct-2018 18:47:23 UTC] PHP Warning:  array_values() expects parameter 1 to be array, integer given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 106
+[23-Oct-2018 18:47:23 UTC] PHP Stack trace:
+[23-Oct-2018 18:47:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 18:47:23 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:220
+[23-Oct-2018 18:47:23 UTC] PHP   3. array_values() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:106
+[23-Oct-2018 18:55:44 UTC] PHP Warning:  array_values() expects parameter 1 to be array, integer given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 106
+[23-Oct-2018 18:55:44 UTC] PHP Stack trace:
+[23-Oct-2018 18:55:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 18:55:44 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:220
+[23-Oct-2018 18:55:44 UTC] PHP   3. array_values() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:106
+[23-Oct-2018 18:55:44 UTC] PHP Warning:  array_values() expects parameter 1 to be array, integer given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 125
+[23-Oct-2018 18:55:44 UTC] PHP Stack trace:
+[23-Oct-2018 18:55:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 18:55:44 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:220
+[23-Oct-2018 18:55:44 UTC] PHP   3. array_values() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:125
+[23-Oct-2018 18:58:43 UTC] PHP Warning:  array_values() expects parameter 1 to be array, integer given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 125
+[23-Oct-2018 18:58:43 UTC] PHP Stack trace:
+[23-Oct-2018 18:58:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 18:58:43 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:220
+[23-Oct-2018 18:58:43 UTC] PHP   3. array_values() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:125
+[23-Oct-2018 18:58:43 UTC] PHP Warning:  array_values() expects parameter 1 to be array, integer given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 125
+[23-Oct-2018 18:58:43 UTC] PHP Stack trace:
+[23-Oct-2018 18:58:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 18:58:43 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:220
+[23-Oct-2018 18:58:43 UTC] PHP   3. array_values() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:125
+[23-Oct-2018 18:59:07 UTC] PHP Warning:  array_values() expects parameter 1 to be array, integer given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 125
+[23-Oct-2018 18:59:07 UTC] PHP Stack trace:
+[23-Oct-2018 18:59:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 18:59:07 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:220
+[23-Oct-2018 18:59:07 UTC] PHP   3. array_values() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:125
+[23-Oct-2018 19:06:31 UTC] PHP Warning:  array_values() expects parameter 1 to be array, integer given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 121
+[23-Oct-2018 19:06:31 UTC] PHP Stack trace:
+[23-Oct-2018 19:06:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 19:06:31 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:216
+[23-Oct-2018 19:06:31 UTC] PHP   3. array_values() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:121
+[23-Oct-2018 19:07:34 UTC] PHP Warning:  array_values() expects parameter 1 to be array, integer given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 121
+[23-Oct-2018 19:07:34 UTC] PHP Stack trace:
+[23-Oct-2018 19:07:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 19:07:34 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:216
+[23-Oct-2018 19:07:34 UTC] PHP   3. array_values() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:121
+[23-Oct-2018 19:09:23 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 108
+[23-Oct-2018 19:09:23 UTC] PHP Stack trace:
+[23-Oct-2018 19:09:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 19:09:23 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:221
+[23-Oct-2018 19:09:23 UTC] PHP   3. array_values() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:108
+[23-Oct-2018 19:10:26 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 109
+[23-Oct-2018 19:10:26 UTC] PHP Stack trace:
+[23-Oct-2018 19:10:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 19:10:26 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:224
+[23-Oct-2018 19:10:26 UTC] PHP   3. array_values() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:109
+[23-Oct-2018 19:10:26 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 109
+[23-Oct-2018 19:10:26 UTC] PHP Stack trace:
+[23-Oct-2018 19:10:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 19:10:26 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:224
+[23-Oct-2018 19:10:26 UTC] PHP   3. array_values() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:109
+[23-Oct-2018 19:12:39 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 109
+[23-Oct-2018 19:12:39 UTC] PHP Stack trace:
+[23-Oct-2018 19:12:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 19:12:39 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:224
+[23-Oct-2018 19:12:39 UTC] PHP   3. array_values() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:109
+[23-Oct-2018 19:12:41 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 109
+[23-Oct-2018 19:12:41 UTC] PHP Stack trace:
+[23-Oct-2018 19:12:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 19:12:41 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:224
+[23-Oct-2018 19:12:41 UTC] PHP   3. array_values() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:109
+[23-Oct-2018 19:12:41 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 109
+[23-Oct-2018 19:12:41 UTC] PHP Stack trace:
+[23-Oct-2018 19:12:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 19:12:41 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:224
+[23-Oct-2018 19:12:41 UTC] PHP   3. array_values() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:109
+[23-Oct-2018 19:12:41 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 109
+[23-Oct-2018 19:12:41 UTC] PHP Stack trace:
+[23-Oct-2018 19:12:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 19:12:41 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:224
+[23-Oct-2018 19:12:41 UTC] PHP   3. array_values() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:109
+[23-Oct-2018 19:12:43 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 109
+[23-Oct-2018 19:12:43 UTC] PHP Stack trace:
+[23-Oct-2018 19:12:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 19:12:43 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:224
+[23-Oct-2018 19:12:43 UTC] PHP   3. array_values() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:109
+[23-Oct-2018 19:12:43 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 109
+[23-Oct-2018 19:12:43 UTC] PHP Stack trace:
+[23-Oct-2018 19:12:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 19:12:43 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:224
+[23-Oct-2018 19:12:43 UTC] PHP   3. array_values() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:109
+[23-Oct-2018 19:12:43 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 109
+[23-Oct-2018 19:12:43 UTC] PHP Stack trace:
+[23-Oct-2018 19:12:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 19:12:43 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:224
+[23-Oct-2018 19:12:43 UTC] PHP   3. array_values() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:109
+[23-Oct-2018 19:12:44 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 109
+[23-Oct-2018 19:12:44 UTC] PHP Stack trace:
+[23-Oct-2018 19:12:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 19:12:44 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:224
+[23-Oct-2018 19:12:44 UTC] PHP   3. array_values() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:109
+[23-Oct-2018 19:13:55 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 109
+[23-Oct-2018 19:13:55 UTC] PHP Stack trace:
+[23-Oct-2018 19:13:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 19:13:55 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:224
+[23-Oct-2018 19:13:55 UTC] PHP   3. array_values() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:109
+[23-Oct-2018 19:13:55 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 109
+[23-Oct-2018 19:13:55 UTC] PHP Stack trace:
+[23-Oct-2018 19:13:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 19:13:55 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:224
+[23-Oct-2018 19:13:55 UTC] PHP   3. array_values() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:109
+[23-Oct-2018 19:13:55 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 109
+[23-Oct-2018 19:13:55 UTC] PHP Stack trace:
+[23-Oct-2018 19:13:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 19:13:55 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:224
+[23-Oct-2018 19:13:55 UTC] PHP   3. array_values() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:109
+[23-Oct-2018 19:13:58 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 109
+[23-Oct-2018 19:13:58 UTC] PHP Stack trace:
+[23-Oct-2018 19:13:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 19:13:58 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:224
+[23-Oct-2018 19:13:58 UTC] PHP   3. array_values() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:109
+[23-Oct-2018 19:13:58 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 109
+[23-Oct-2018 19:13:58 UTC] PHP Stack trace:
+[23-Oct-2018 19:13:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 19:13:58 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:224
+[23-Oct-2018 19:13:58 UTC] PHP   3. array_values() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:109
+[23-Oct-2018 19:14:17 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 109
+[23-Oct-2018 19:14:17 UTC] PHP Stack trace:
+[23-Oct-2018 19:14:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 19:14:17 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:224
+[23-Oct-2018 19:14:17 UTC] PHP   3. array_values() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:109
+[23-Oct-2018 19:14:17 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 109
+[23-Oct-2018 19:14:17 UTC] PHP Stack trace:
+[23-Oct-2018 19:14:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 19:14:17 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:224
+[23-Oct-2018 19:14:17 UTC] PHP   3. array_values() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:109
+[23-Oct-2018 20:31:06 UTC] PHP Warning:  Illegal offset type in unset in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 96
+[23-Oct-2018 20:31:06 UTC] PHP Stack trace:
+[23-Oct-2018 20:31:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 20:31:06 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:236
+[23-Oct-2018 20:31:06 UTC] PHP Warning:  Illegal offset type in unset in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 96
+[23-Oct-2018 20:31:06 UTC] PHP Stack trace:
+[23-Oct-2018 20:31:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 20:31:06 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:236
+[23-Oct-2018 20:31:06 UTC] PHP Warning:  Illegal offset type in unset in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 96
+[23-Oct-2018 20:31:06 UTC] PHP Stack trace:
+[23-Oct-2018 20:31:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 20:31:06 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:236
+[23-Oct-2018 20:31:06 UTC] PHP Warning:  Illegal offset type in unset in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 96
+[23-Oct-2018 20:31:06 UTC] PHP Stack trace:
+[23-Oct-2018 20:31:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 20:31:06 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:236
+[23-Oct-2018 20:31:06 UTC] PHP Warning:  Illegal offset type in unset in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 96
+[23-Oct-2018 20:31:06 UTC] PHP Stack trace:
+[23-Oct-2018 20:31:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 20:31:06 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:236
+[23-Oct-2018 20:44:29 UTC] PHP Warning:  rand() expects parameter 2 to be long, array given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 101
+[23-Oct-2018 20:44:29 UTC] PHP Stack trace:
+[23-Oct-2018 20:44:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 20:44:29 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:244
+[23-Oct-2018 20:44:29 UTC] PHP   3. rand() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:101
+[23-Oct-2018 20:44:29 UTC] PHP Warning:  rand() expects parameter 2 to be long, array given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 101
+[23-Oct-2018 20:44:29 UTC] PHP Stack trace:
+[23-Oct-2018 20:44:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 20:44:29 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:244
+[23-Oct-2018 20:44:29 UTC] PHP   3. rand() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:101
+[23-Oct-2018 20:44:29 UTC] PHP Warning:  rand() expects parameter 2 to be long, array given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 101
+[23-Oct-2018 20:44:29 UTC] PHP Stack trace:
+[23-Oct-2018 20:44:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 20:44:29 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:244
+[23-Oct-2018 20:44:29 UTC] PHP   3. rand() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:101
+[23-Oct-2018 20:44:29 UTC] PHP Warning:  rand() expects parameter 2 to be long, array given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 101
+[23-Oct-2018 20:44:29 UTC] PHP Stack trace:
+[23-Oct-2018 20:44:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 20:44:29 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:244
+[23-Oct-2018 20:44:29 UTC] PHP   3. rand() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:101
+[23-Oct-2018 20:44:29 UTC] PHP Warning:  rand() expects parameter 2 to be long, array given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 101
+[23-Oct-2018 20:44:29 UTC] PHP Stack trace:
+[23-Oct-2018 20:44:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 20:44:29 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:244
+[23-Oct-2018 20:44:29 UTC] PHP   3. rand() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:101
+[23-Oct-2018 20:44:52 UTC] PHP Warning:  rand() expects exactly 2 parameters, 1 given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 101
+[23-Oct-2018 20:44:52 UTC] PHP Stack trace:
+[23-Oct-2018 20:44:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 20:44:52 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:244
+[23-Oct-2018 20:44:52 UTC] PHP   3. rand() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:101
+[23-Oct-2018 20:44:52 UTC] PHP Warning:  rand() expects exactly 2 parameters, 1 given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 101
+[23-Oct-2018 20:44:52 UTC] PHP Stack trace:
+[23-Oct-2018 20:44:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 20:44:52 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:244
+[23-Oct-2018 20:44:52 UTC] PHP   3. rand() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:101
+[23-Oct-2018 20:44:52 UTC] PHP Warning:  rand() expects exactly 2 parameters, 1 given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 101
+[23-Oct-2018 20:44:52 UTC] PHP Stack trace:
+[23-Oct-2018 20:44:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 20:44:52 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:244
+[23-Oct-2018 20:44:52 UTC] PHP   3. rand() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:101
+[23-Oct-2018 20:44:52 UTC] PHP Warning:  rand() expects exactly 2 parameters, 1 given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 101
+[23-Oct-2018 20:44:52 UTC] PHP Stack trace:
+[23-Oct-2018 20:44:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 20:44:52 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:244
+[23-Oct-2018 20:44:52 UTC] PHP   3. rand() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:101
+[23-Oct-2018 20:44:52 UTC] PHP Warning:  rand() expects exactly 2 parameters, 1 given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 101
+[23-Oct-2018 20:44:52 UTC] PHP Stack trace:
+[23-Oct-2018 20:44:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 20:44:52 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:244
+[23-Oct-2018 20:44:52 UTC] PHP   3. rand() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:101
+[23-Oct-2018 20:44:53 UTC] PHP Warning:  rand() expects exactly 2 parameters, 1 given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 101
+[23-Oct-2018 20:44:53 UTC] PHP Stack trace:
+[23-Oct-2018 20:44:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 20:44:53 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:244
+[23-Oct-2018 20:44:53 UTC] PHP   3. rand() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:101
+[23-Oct-2018 20:44:53 UTC] PHP Warning:  rand() expects exactly 2 parameters, 1 given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 101
+[23-Oct-2018 20:44:53 UTC] PHP Stack trace:
+[23-Oct-2018 20:44:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 20:44:53 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:244
+[23-Oct-2018 20:44:53 UTC] PHP   3. rand() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:101
+[23-Oct-2018 20:44:53 UTC] PHP Warning:  rand() expects exactly 2 parameters, 1 given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 101
+[23-Oct-2018 20:44:53 UTC] PHP Stack trace:
+[23-Oct-2018 20:44:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 20:44:53 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:244
+[23-Oct-2018 20:44:53 UTC] PHP   3. rand() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:101
+[23-Oct-2018 20:44:53 UTC] PHP Warning:  rand() expects exactly 2 parameters, 1 given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 101
+[23-Oct-2018 20:44:53 UTC] PHP Stack trace:
+[23-Oct-2018 20:44:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 20:44:53 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:244
+[23-Oct-2018 20:44:53 UTC] PHP   3. rand() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:101
+[23-Oct-2018 20:44:53 UTC] PHP Warning:  rand() expects exactly 2 parameters, 1 given in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 101
+[23-Oct-2018 20:44:53 UTC] PHP Stack trace:
+[23-Oct-2018 20:44:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:0
+[23-Oct-2018 20:44:53 UTC] PHP   2. generateTable() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:244
+[23-Oct-2018 20:44:53 UTC] PHP   3. rand() /home/ubuntu/workspace/cst336/practice/midterm_practice1.php:101
+[23-Oct-2018 20:51:50 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 101
+[23-Oct-2018 20:52:48 UTC] PHP Parse error:  syntax error, unexpected ']' in /home/ubuntu/workspace/cst336/practice/midterm_practice1.php on line 101
