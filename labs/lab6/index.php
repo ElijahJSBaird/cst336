@@ -53,15 +53,6 @@ function filterProducts() {
     
     //echo $sql;
     
-    if (isset($_GET['orderBy'])) {
-        
-        if ($_GET['orderBy'] == "productPrice") {
-            $sql .= " ORDER BY price";
-        } else {
-            $sql .= " ORDER BY productName";
-        }
-    }
-    
     if (!empty($_GET["priceFrom"])) {
         $sql .= " AND price >= :priceFrom";
         $namedParameters[":priceFrom"] = $_GET["priceFrom"];
@@ -70,6 +61,15 @@ function filterProducts() {
     if (!empty($_GET["priceTo"])) {
         $sql .= " AND price <= :priceTo";
         $namedParameters[":priceTo"] = $_GET["priceTo"];
+    }
+    
+    if (isset($_GET['orderBy'])) {
+        
+        if ($_GET['orderBy'] == "productPrice") {
+            $sql .= " ORDER BY price";
+        } else {
+            $sql .= " ORDER BY productName";
+        }
     }
 
     $stmt = $dbConn->prepare($sql);
@@ -146,6 +146,5 @@ function filterProducts() {
             title="This is the buddy verification badge"/>
             </small>
         </footer>
-
     </body>
 </html>
