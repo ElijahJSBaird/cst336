@@ -91,22 +91,9 @@ function filterProducts() {
 <html>
     <head>
         <title> Lab 6: Ottermart Product Search</title>
+        <link rel="stylesheet" href="css/styles.css" type="text/css" />
     </head>
     <body>
-        <style type="text/css">
-            form, h1, h2
-            {
-                text-align: center;
-            }
-            form
-            {
-                border: solid;
-                border-radius: 4px;
-                border-color: #275399;
-            }
-        </style>
-        
-        
         <form>
             <h1> OtterMart Product Search </h1>
             Product: <input type="text" name="productName" placeholder="Product keyword" /> <br />
