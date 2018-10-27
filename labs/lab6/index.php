@@ -32,6 +32,11 @@ function filterProducts() {
   
     $sql = "SELECT * FROM om_product WHERE 1"; //Getting all records from database
     
+    if (!isset($product))
+    {
+        return;
+    }
+    
     if (!empty($product)){
         //This SQL prevents SQL INJECTION by using a named parameter
         $sql .=  " AND productName LIKE :product OR productDescription LIKE :product";
@@ -117,8 +122,14 @@ function filterProducts() {
             <br><br>
         </form>
         <hr>
-        <h3>Products Found: </h3>
-        <?= filterProducts() ?>
+        
+        <?php 
+        if (isset($_GET["productName"])) 
+        {
+            echo "<h3>Products Found: </h3>";
+            filterProducts();
+        }
+        ?>
         
     
 
