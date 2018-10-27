@@ -25,23 +25,25 @@ function filterProducts() {
     
     $namedParameters = array();
     $product = $_GET['productName'];
-    
+
     //This SQL works but it doesn't prevent SQL INJECTION (due to the single quotes)
     //$sql = "SELECT * FROM om_product
     //        WHERE productName LIKE '%$product%'";
   
-    $sql = "SELECT * FROM om_product WHERE 1"; //Gettting all records from database
+    $sql = "SELECT * FROM om_product WHERE 1"; //Getting all records from database
     
     if (!empty($product)){
         //This SQL prevents SQL INJECTION by using a named parameter
-         $sql .=  " AND productName LIKE :product";
-         $namedParameters[':product'] = "%$product%";
+        $sql .=  " AND productName LIKE :product OR productDescription LIKE :product";
+        $namedParameters[':product'] = "%$product%";
+        // $sql .=  "";
+        // $namedParameters[':product'] = "%$product%";
     }
     
     if (!empty($_GET['category'])){
         //This SQL prevents SQL INJECTION by using a named parameter
-         $sql .=  " AND catId =  :category";
-          $namedParameters[':category'] = $_GET['category'] ;
+        $sql .=  " AND catId =  :category";
+        $namedParameters[':category'] = $_GET['category'] ;
     }
     
     //echo $sql;
@@ -49,14 +51,10 @@ function filterProducts() {
     if (isset($_GET['orderBy'])) {
         
         if ($_GET['orderBy'] == "productPrice") {
-            
             $sql .= " ORDER BY price";
         } else {
-            
-              $sql .= " ORDER BY productName";
+            $sql .= " ORDER BY productName";
         }
-        
-        
     }
     
     if (!empty($_GET["priceFrom"])) {
