@@ -1776,3 +1776,51 @@ Stack trace:
 #1 /home/ubuntu/workspace/cst336/labs/lab6/productInfo.php(55): displayProductInfo()
 #2 {main}
   thrown in /home/ubuntu/workspace/cst336/labs/lab6/productInfo.php on line 15
+[29-Oct-2018 21:37:21 UTC] PHP Fatal error:  Cannot redeclare startConnection() (previously declared in /home/ubuntu/workspace/cst336/inc/dbConnection.php:4) in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 46
+[29-Oct-2018 21:37:21 UTC] PHP Stack trace:
+[29-Oct-2018 21:37:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/loginProcess.php:0
+[29-Oct-2018 21:38:17 UTC] PHP Fatal error:  Cannot redeclare startConnection() (previously declared in /home/ubuntu/workspace/cst336/inc/dbConnection.php:4) in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 46
+[29-Oct-2018 21:38:17 UTC] PHP Stack trace:
+[29-Oct-2018 21:38:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/loginProcess.php:0
+[29-Oct-2018 21:38:47 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1044] Access denied for user 'b158fca057bfa9'@'%' to database 'ottermart'' in /home/ubuntu/workspace/cst336/inc/dbConnection.php:20
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/inc/dbConnection.php(20): PDO->__construct('mysql:host=us-c...', 'b158fca057bfa9', '879870a4')
+#1 /home/ubuntu/workspace/cst336/labs/lab7/loginProcess.php(5): startConnectionLab7('ottermart')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 20
+[29-Oct-2018 21:39:23 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'heroku_fb9ee4f9f26217f'' in /home/ubuntu/workspace/cst336/inc/dbConnection.php:42
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/inc/dbConnection.php(42): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/ubuntu/workspace/cst336/labs/lab7/admin.php(5): startConnection('heroku_fb9ee4f9...')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/inc/dbConnection.php on line 42
+[29-Oct-2018 21:40:09 UTC] PHP Fatal error:  Call to undefined function startConnection() in /home/ubuntu/workspace/cst336/labs/lab7/admin.php on line 5
+[29-Oct-2018 21:40:09 UTC] PHP Stack trace:
+[29-Oct-2018 21:40:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:0
+[29-Oct-2018 21:40:37 UTC] PHP Warning:  include(inc/functions.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/labs/lab7/admin.php on line 7
+[29-Oct-2018 21:40:37 UTC] PHP Stack trace:
+[29-Oct-2018 21:40:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:0
+[29-Oct-2018 21:40:37 UTC] PHP Warning:  include(): Failed opening 'inc/functions.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/labs/lab7/admin.php on line 7
+[29-Oct-2018 21:40:37 UTC] PHP Stack trace:
+[29-Oct-2018 21:40:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:0
+[29-Oct-2018 21:40:37 UTC] PHP Fatal error:  Call to undefined function displayAllProducts() in /home/ubuntu/workspace/cst336/labs/lab7/admin.php on line 31
+[29-Oct-2018 21:40:37 UTC] PHP Stack trace:
+[29-Oct-2018 21:40:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:0
+[29-Oct-2018 22:21:50 UTC] PHP Warning:  include(inc/functions.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/labs/lab7/admin.php on line 13
+[29-Oct-2018 22:21:50 UTC] PHP Stack trace:
+[29-Oct-2018 22:21:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:0
+[29-Oct-2018 22:21:50 UTC] PHP Warning:  include(): Failed opening 'inc/functions.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/labs/lab7/admin.php on line 13
+[29-Oct-2018 22:21:50 UTC] PHP Stack trace:
+[29-Oct-2018 22:21:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:0
+[29-Oct-2018 22:21:50 UTC] PHP Fatal error:  Call to undefined function displayAllProducts() in /home/ubuntu/workspace/cst336/labs/lab7/admin.php on line 42
+[29-Oct-2018 22:21:50 UTC] PHP Stack trace:
+[29-Oct-2018 22:21:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:0
+[29-Oct-2018 22:24:37 UTC] PHP Warning:  include(inc/functions.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/labs/lab7/admin.php on line 13
+[29-Oct-2018 22:24:37 UTC] PHP Stack trace:
+[29-Oct-2018 22:24:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:0
+[29-Oct-2018 22:24:37 UTC] PHP Warning:  include(): Failed opening 'inc/functions.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/labs/lab7/admin.php on line 13
+[29-Oct-2018 22:24:37 UTC] PHP Stack trace:
+[29-Oct-2018 22:24:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:0
+[29-Oct-2018 22:24:37 UTC] PHP Fatal error:  Call to undefined function displayAllProducts() in /home/ubuntu/workspace/cst336/labs/lab7/admin.php on line 42
+[29-Oct-2018 22:24:37 UTC] PHP Stack trace:
+[29-Oct-2018 22:24:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:0
