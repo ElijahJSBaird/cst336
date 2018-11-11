@@ -22,7 +22,16 @@ if (isset($_GET['updateProduct'])){  //user has submitted update form
                productImage = :productImage
             WHERE productId = " . $_GET['productId'];
          
+    $np = array();
+    $np[":productName"] = $productName;
+    $np[":productDescription"] = $description;
+    $np[":price"] = $price;
+    $np[":catId"] = $catId;
+    $np[":productImage"] = $image;
     
+    $stmt = $dbConn->prepare($sql);
+    $stmt->execute($np);
+    echo "Product was changed!";
 }
 
 
@@ -42,8 +51,9 @@ if (isset($_GET['productId'])) {
 <html>
     <head>
         <title> Update Products! </title>
+        <link rel="stylesheet" href="css/styles.css" type="text/css" />
     </head>
-    <body>
+    <body id="admin">
 
         <h1> Updating a Product </h1>
         
@@ -72,7 +82,9 @@ if (isset($_GET['productId'])) {
            Set Image Url: <input type="text" name="productImage" value="<?=$productInfo['productImage']?>"><br>
            <input type="submit" name="updateProduct" value="Update Product">
         </form>
-        
+        <form method="post" action="admin.php">
+            <input type="submit" value="Back">
+        </form>
         
     </body>
 </html>

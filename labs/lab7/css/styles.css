@@ -1,0 +1,81 @@
+#hey {
+    /*text-align: center;*/
+}
+#admin {
+    background: linear-gradient(to right, #ffc0cb 10%, #967bb6 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*color: white;*/
+    /*text-align: center;*/
+    padding-left: 750px;
+        
+}
+
+#error {
+    padding-top: 5%;
+    background-color: beige;
+    font-size: 1.5em;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+input, select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+}
+
+input[type=submit] {
+    /*width: 20%;*/
+    background-color: #ccddff;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: lightblue;
+}
+
+label {
+    font-weight: bold;
+}
+
+
+#main {
+    background-color: #ffff00;
+    border-radius: 20px;
+    width: 50%;
+}
+#title {
+    background-color: #ff6666;
+    border-radius: 20px;
+    width: 50%;
+    height: 50%;
+}
+
+#mainR {
+    background-color: #ff9933;
+    border-radius: 20px;
+    width: 50%;
+}
+#titleR {
+    background-color: #00cc00;
+    border-radius: 20px;
+    width: 50%;
+    height: 50%;
+}
+
+footer {
+    font-size: 0.9em;
+}
+
+#points {
+    font-size: 3em;
+}

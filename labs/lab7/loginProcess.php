@@ -23,17 +23,42 @@ $stmt = $dbConn->prepare($sql);
 $stmt->execute($np);
 $record = $stmt->fetch(PDO::FETCH_ASSOC); //we're expecting just one record
 
-//print_r($record);
+// print_r($record);
 
-if (empty($record)) {
+// if (empty($record)) {
     
-    echo "Wrong username or password!!";
-} else {
+//     echo "Wrong username or password!!";
+// } else {
    
-   $_SESSION['adminFullName'] = $record['firstName'] .  "   "  . $record['lastName'];
-   header('Location: admin.php'); //redirects to another program
+//   $_SESSION['adminFullName'] = $record['firstName'] .  "   "  . $record['lastName'];
+//   header('Location: admin.php'); //redirects to another program
     
-}
+// }
 
 
 ?>
+<!DOCTYPE html>
+<html id="error">
+    <head>
+        <title> Login Error </title>
+        <link rel="stylesheet" href="css/styles.css" type="text/css" />
+        
+    </head>
+    <?php
+            if (empty($record)) {
+            
+            echo "Wrong username or password!!";
+            } else {
+           
+               $_SESSION['adminFullName'] = $record['firstName'] .  "   "  . $record['lastName'];
+               header('Location: admin.php'); //redirects to another program
+                
+            }
+        ?>
+    <body id="error">
+        
+        <form method="post" action="index.php">
+          <input type="submit" value="Back">
+        </form>
+    </body>
+</html>

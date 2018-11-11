@@ -2,6 +2,8 @@
 <html>
     <head>
         <title> Admin Login </title>
+        <link rel="stylesheet" href="cssIndex/styles.css" type="text/css" />
+        
     </head>
     <body>
 

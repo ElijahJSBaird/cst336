@@ -21,6 +21,7 @@ validateSession();
             }
         </style>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="css/styles.css" type="text/css" />
         
         <script>
         
@@ -41,20 +42,21 @@ validateSession();
         </script>
     
     </head>
-    <body>
-        
-        <h1> ADMIN SECTION - OTTERMART </h1>
-        
-         <h3>Welcome <?= $_SESSION['adminFullName'] ?> </h3>
-
-          <form action="addProduct.php">
-              <input type="submit" value="Add New Product">
-          </form>
-         <form action="logout.php">
-              <input type="submit" value="Logout">
-          </form>
-
-           <br><br>
+    <div id="hey">
+            <h1> ADMIN SECTION - OTTERMART </h1>
+            
+             <h3>Welcome <?= $_SESSION['adminFullName'] ?> </h3>
+    
+              <form action="addProduct.php">
+                  <input type="submit" value="Add New Product">
+              </form>
+             <form action="logout.php">
+                  <input type="submit" value="Logout">
+              </form>
+    
+               <br><br>
+        </div>
+    <body id="admin">
         
         <?= displayAllProducts() ?>
         
