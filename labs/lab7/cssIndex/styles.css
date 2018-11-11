@@ -1,3 +1,11 @@
+#error {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 2em;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
 body {
     background: linear-gradient(to bottom, seagreen 25%, pink 100%);
     background-repeat: no-repeat;

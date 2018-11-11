@@ -38,16 +38,14 @@ $record = $stmt->fetch(PDO::FETCH_ASSOC); //we're expecting just one record
 
 ?>
 <!DOCTYPE html>
-<html id="error">
+<html>
     <head>
         <title> Login Error </title>
-        <link rel="stylesheet" href="css/styles.css" type="text/css" />
-        
-    </head>
-    <?php
+        <link rel="stylesheet" href="cssIndex/styles.css" type="text/css" />
+        <?php
             if (empty($record)) {
             
-            echo "Wrong username or password!!";
+            echo "<div id='error'> Wrong username or password!! </div>";
             } else {
            
                $_SESSION['adminFullName'] = $record['firstName'] .  "   "  . $record['lastName'];
@@ -55,10 +53,25 @@ $record = $stmt->fetch(PDO::FETCH_ASSOC); //we're expecting just one record
                 
             }
         ?>
-    <body id="error">
-        
+    </head>
+    
+    <body>
         <form method="post" action="index.php">
           <input type="submit" value="Back">
         </form>
     </body>
+    <footer>
+        <hr id="hr100"/>
+        <small>
+        CST 336 2018 &copy; Baird <br/>
+        
+        <strong>Disclaimer:</strong> 
+        The information displayed on this page is fictitious for academic purposes only. <br/>
+        <br/>
+        <img src="../../img/csumb_logo.jpg" alt="CSUMB logo" title="This is
+        the CSUMB logo"/>
+        <img src="../../img/buddy_verified.png" alt="Buddy Verified" 
+        title="This is the buddy verification badge"/>
+        </small>
+    </footer>
 </html>

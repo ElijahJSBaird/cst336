@@ -48,7 +48,7 @@ if (isset($_GET["assignment"])) {
             <option value="lab4">Lab 4</option>
             <option value="lab5">Lab 5</option>
             <option value="lab6">Lab 6</option>
-            <!--<option value="lab7">Lab 7</option>-->
+            <option value="lab7">Lab 7</option>
             <!--<option value="lab8">Lab 8</option>-->
             <option value="tp">Team Project</option>
         </select>
