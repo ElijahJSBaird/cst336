@@ -1824,3 +1824,67 @@ Stack trace:
 [29-Oct-2018 22:24:37 UTC] PHP Fatal error:  Call to undefined function displayAllProducts() in /home/ubuntu/workspace/cst336/labs/lab7/admin.php on line 42
 [29-Oct-2018 22:24:37 UTC] PHP Stack trace:
 [29-Oct-2018 22:24:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/admin.php:0
+[11-Nov-2018 06:47:50 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/cst336/labs/lab7/index.php on line 56
+[11-Nov-2018 06:48:27 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab7/index.php on line 23
+[11-Nov-2018 06:48:27 UTC] PHP Stack trace:
+[11-Nov-2018 06:48:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/index.php:0
+[11-Nov-2018 06:48:27 UTC] PHP   2. login() /home/ubuntu/workspace/cst336/labs/lab7/index.php:54
+[11-Nov-2018 06:49:26 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab7/index.php on line 24
+[11-Nov-2018 06:49:26 UTC] PHP Stack trace:
+[11-Nov-2018 06:49:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/index.php:0
+[11-Nov-2018 06:49:26 UTC] PHP   2. login() /home/ubuntu/workspace/cst336/labs/lab7/index.php:55
+[11-Nov-2018 06:55:53 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/ubuntu/workspace/cst336/labs/lab7/index.php on line 61
+[11-Nov-2018 06:56:19 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/cst336/labs/lab7/index.php on line 62
+[11-Nov-2018 06:56:48 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/ubuntu/workspace/cst336/labs/lab7/index.php on line 61
+[11-Nov-2018 06:58:06 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab7/index.php on line 24
+[11-Nov-2018 06:58:06 UTC] PHP Stack trace:
+[11-Nov-2018 06:58:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/index.php:0
+[11-Nov-2018 06:58:06 UTC] PHP   2. login() /home/ubuntu/workspace/cst336/labs/lab7/index.php:63
+[11-Nov-2018 06:58:34 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab7/index.php on line 24
+[11-Nov-2018 06:58:34 UTC] PHP Stack trace:
+[11-Nov-2018 06:58:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/index.php:0
+[11-Nov-2018 06:58:34 UTC] PHP   2. login() /home/ubuntu/workspace/cst336/labs/lab7/index.php:63
+[11-Nov-2018 06:58:58 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab7/index.php on line 23
+[11-Nov-2018 06:58:58 UTC] PHP Stack trace:
+[11-Nov-2018 06:58:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/index.php:0
+[11-Nov-2018 06:58:58 UTC] PHP   2. login() /home/ubuntu/workspace/cst336/labs/lab7/index.php:62
+[11-Nov-2018 06:59:19 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab7/index.php on line 23
+[11-Nov-2018 06:59:19 UTC] PHP Stack trace:
+[11-Nov-2018 06:59:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/index.php:0
+[11-Nov-2018 06:59:19 UTC] PHP   2. login() /home/ubuntu/workspace/cst336/labs/lab7/index.php:62
+[11-Nov-2018 06:59:34 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab7/index.php on line 23
+[11-Nov-2018 06:59:34 UTC] PHP Stack trace:
+[11-Nov-2018 06:59:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/index.php:0
+[11-Nov-2018 06:59:34 UTC] PHP   2. login() /home/ubuntu/workspace/cst336/labs/lab7/index.php:62
+[11-Nov-2018 06:59:48 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab7/index.php on line 23
+[11-Nov-2018 06:59:48 UTC] PHP Stack trace:
+[11-Nov-2018 06:59:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/index.php:0
+[11-Nov-2018 06:59:48 UTC] PHP   2. login() /home/ubuntu/workspace/cst336/labs/lab7/index.php:62
+[11-Nov-2018 07:00:01 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab7/index.php on line 23
+[11-Nov-2018 07:00:01 UTC] PHP Stack trace:
+[11-Nov-2018 07:00:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/index.php:0
+[11-Nov-2018 07:00:01 UTC] PHP   2. login() /home/ubuntu/workspace/cst336/labs/lab7/index.php:63
+[11-Nov-2018 07:00:06 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab7/index.php on line 23
+[11-Nov-2018 07:00:06 UTC] PHP Stack trace:
+[11-Nov-2018 07:00:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/index.php:0
+[11-Nov-2018 07:00:06 UTC] PHP   2. login() /home/ubuntu/workspace/cst336/labs/lab7/index.php:63
+[11-Nov-2018 07:00:25 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab7/index.php on line 23
+[11-Nov-2018 07:00:25 UTC] PHP Stack trace:
+[11-Nov-2018 07:00:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/index.php:0
+[11-Nov-2018 07:00:25 UTC] PHP   2. login() /home/ubuntu/workspace/cst336/labs/lab7/index.php:63
+[11-Nov-2018 07:00:28 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab7/index.php on line 23
+[11-Nov-2018 07:00:28 UTC] PHP Stack trace:
+[11-Nov-2018 07:00:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/index.php:0
+[11-Nov-2018 07:00:28 UTC] PHP   2. login() /home/ubuntu/workspace/cst336/labs/lab7/index.php:63
+[11-Nov-2018 07:02:10 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab7/index.php on line 23
+[11-Nov-2018 07:02:10 UTC] PHP Stack trace:
+[11-Nov-2018 07:02:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/index.php:0
+[11-Nov-2018 07:02:10 UTC] PHP   2. login() /home/ubuntu/workspace/cst336/labs/lab7/index.php:63
+[11-Nov-2018 07:03:09 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab7/index.php on line 26
+[11-Nov-2018 07:03:09 UTC] PHP Stack trace:
+[11-Nov-2018 07:03:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/index.php:0
+[11-Nov-2018 07:03:09 UTC] PHP   2. login() /home/ubuntu/workspace/cst336/labs/lab7/index.php:66
+[11-Nov-2018 07:04:30 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab7/index.php on line 26
+[11-Nov-2018 07:04:30 UTC] PHP Stack trace:
+[11-Nov-2018 07:04:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/index.php:0
+[11-Nov-2018 07:04:30 UTC] PHP   2. login() /home/ubuntu/workspace/cst336/labs/lab7/index.php:67
