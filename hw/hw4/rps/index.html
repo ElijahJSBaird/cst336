@@ -1,0 +1,87 @@
+<html>
+	<head>
+		<title>Rock Paper Scissors</title>
+		<link rel="stylesheet" type="text/css" href="rps.css">
+		<script language="javascript" type="text/javascript" src="rps.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script>  
+			$(document).ready ( function() {
+				var back = ["#ff0000","gray", "seagreen", "pink", "violet", "teal"];
+				var rand = back[Math.floor(Math.random() * back.length)];
+				$("h1").css("color", rand); 
+			})
+		</script>
+	</head>
+	<body onload="init()">
+		<div id="gameWindow">
+			<div id="introScreen">
+				<div id="introScreenContent">
+					<h1>Rock Paper Scissors</h1>
+					<div id="btnStart" class="button" onclick="startGame()">Start Game</div>
+				</div>
+			</div>
+			<div id="endScreen">
+				<div id="endScreenContent">
+					<h1 id="txtEndTitle">Something beats Something</h1>
+					<h2 id="txtEndMessage">You Win, Lose, or Tie</h2>
+					<div id="btnReplay" class="button" onclick="replay()">Play Again</div>
+				</div>
+			</div>
+			<div id="btnGo" onclick="go()">GO</div>
+
+			<div id="playerPanel">
+				<h2>Player</h2>
+				<img id="imgPlayer" src="images/question.png">
+				<br><br>
+				<div id="btnRock" class="iconButton" onclick="select('rock')">
+					<img src="images/rock.png">
+					<br>Rock
+				</div>
+				<div id="btnPaper" class="iconButton" onclick="select('paper')">
+					<img src="images/paper.png">
+					<br>Paper
+				</div>
+				<div id="btnScissors" class="iconButton" onclick="select('scissors')">
+					<img src="images/scissors.png">
+					<br>Scissors
+				</div>
+			</div>
+
+			<div id="computerPanel">
+				<h2>Computer</h2>
+				<img id="imgComputer" src="images/question.png">
+				<br><br>
+				<div id="lblRock" class="iconLabel">
+					<img src="images/rock.png">
+					<br>Rock
+				</div>
+				<div id="lblPaper" class="iconLabel">
+					<img src="images/paper.png">
+					<br>Paper
+				</div>
+				<div id="lblScissors" class="iconLabel">
+					<img src="images/scissors.png">
+					<br>Scissors
+				</div>
+			</div>
+
+			
+		</div>
+	</body>
+	<footer>
+            <hr id="hr100"/>
+            <small>
+            CST 336 2018 &copy; Baird <br/>
+            
+            <strong>Disclaimer:</strong> This quiz is about the US version of The Office. I did not create any of the characters, I only created the questions about them.
+            <br/><br/>
+            The information displayed on this page for academic purposes only. <br/>
+            <br/>
+            <img src="../../../img/csumb_logo.jpg" alt="CSUMB logo" title="This is
+            the CSUMB logo"/>
+            <img src="../../../img/buddy_verified.png" alt="Buddy Verified" 
+            title="This is the buddy verification badge"/>
+            </small>
+        </footer>
+</html>
+
