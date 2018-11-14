@@ -3,7 +3,9 @@
 $page = $_GET["assignment"];
 
 if (isset($_GET["assignment"])) {
-    if ($page == "hw1" || $page == "hw2" || $page == "hw3")
+    if ($page == "hw4")
+        header("Location:hw/".$page."/rps");
+    else if ($page[0] == 'h')
         header("Location:hw/".$page);
     else if ($page == "tp")
         header("Location:TeamProject");
@@ -42,6 +44,7 @@ if (isset($_GET["assignment"])) {
             <option value="hw1">Homework 1</option>
             <option value="hw2">Homework 2</option>
             <option value="hw3">Homework 3</option>
+            <option value="hw4">Homework 4</option>
             <option value="lab1">Lab 1</option>
             <option value="lab2">Lab 2</option>
             <option value="lab3">Lab 3</option>
