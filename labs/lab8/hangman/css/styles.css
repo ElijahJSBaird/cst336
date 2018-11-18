@@ -26,3 +26,9 @@
     padding: 7px 7px !important;
     margin: 0px, 2px;
 }
+
+body {
+    background: linear-gradient(to top left, seagreen 35%, cyan 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
