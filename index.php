@@ -36,7 +36,11 @@ if (isset($_GET["assignment"])) {
     <style type="text/css">
         body {
             text-align: center;
+            background: linear-gradient(to top left, seagreen 35%, cyan 100%);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
+        
     </style>
     
     <form>
