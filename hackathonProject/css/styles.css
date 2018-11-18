@@ -1,0 +1,103 @@
+body
+{
+    text-align: center;
+}
+#title
+{
+    font-size: 4em;
+}
+/* Always set the map height explicitly to define the size of the div
+* element that contains the map. */
+#map {
+    height:70%;
+    width:100%;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+    height: 100%;
+    padding: 2%;
+}
+hr {
+    padding: 5px;
+}
+#tb, #td_logo, #td_summit {
+    
+    padding-bottom: 2px;
+    border-radius: 20px;
+    
+}
+#td_logo{
+    border:solid black 5px;
+}
+
+input, select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type=submit] {
+    font-family: sans-serif;
+    font-weight: 1000;
+    font-size:20px;
+    height:75px;
+    width:200px;
+    background-color: #FFAC00;
+    color: white;
+    padding: 10px 15px;
+    margin: 3px 0;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #af780a;
+}
+
+#logo {
+    border-radius: 30px;
+    border-left: thick solid lightgrey;
+}
+
+/* HIDE RADIO */
+[type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* IMAGE STYLES */
+[type=radio] + img {
+  cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + img {
+  outline: 6px solid #AF780A;
+  border-radius: 50px;
+}
+
+#tb2 {
+    color: black;
+    background-color: lightgrey;
+    border-radius: 50px;
+}
+
+#h2_1 {
+    font: italic small-caps bold 16px/2 cursive;
+    font-weight: 1000;
+    width: 20%;
+    background-color: lightgrey;
+    border-radius: 50px;
+    color: black;
+}
+p {
+    font: italic bold 16px/2 cursive;
+}
+
+h3 {
+    color: green;
+}
