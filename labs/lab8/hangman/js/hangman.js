@@ -9,6 +9,7 @@ var alphabet = ["A", "B", "C", "D", "E", "F", "G",
                 "H", "I", "J", "K", "L", "M", "N", 
                 "O", "P", "Q", "R", "S", "T", 
                 "U", "V", "W", "X", "Y", "Z"];
+var hint = false;
 
 window.onload = startGame();
 
@@ -38,7 +39,8 @@ function updateBoard() {
         document.getElementById("word").innerHTML += letter + " ";
     }
     $("#word").append("<br>");
-    $("#word").append("<span class='hint'>Hint: " + selectedHint + "</span>");
+    if (hint)
+        $("#word").append("<span class='hint'>Hint: " + selectedHint + "</span>");
 }
 
 function updateWord(positions, letter) {
@@ -100,6 +102,14 @@ function disableButton(btn) {
     btn.attr("class", "btn btn-danger");
 }
 
+function showHint() {
+    hint = true;
+    remainingGuesses -= 1;
+    $("#hint").hide();
+    updateBoard();
+    updateMan();
+}
+
 $("#letterBtn").click(function() {
     var boxVal = $("#letterBox").val();
     console.log("You pressed the button and it had the value: " + boxVal);
@@ -112,4 +122,8 @@ $(".letter").click(function() {
 
 $(".replayBtn").on("click", function() {
     location.reload();
+});
+
+$("#hint").click(function() {
+    showHint();
 });
