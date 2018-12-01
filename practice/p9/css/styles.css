@@ -1,0 +1,16 @@
+body {
+    text-align: center;
+}
+
+table, tr, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+}
+
+#terms {
+    color: red;
+}

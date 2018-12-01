@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Holiday Shopping</title>
+        <link rel="stylesheet" href="css/styles.css" type="text/css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            var cakeT = 0;
+            var pinataT = 1;
+            var shippingCost = 5;
+            var subTotal = 0;
+            var tax = 0;
+            var total = 0;
+            $(document).ready(function(){
+                $("input").change(function(){
+                    var cakeAmt = $('#cakeq').val();
+                    cakeT = cakeAmt * 30;
+                    var pinataAmt = $('#pinataq').val();
+                    pinataT = pinataAmt * 20;
+                    
+                    subTotal = cakeT + pinataT;
+                    tax = subTotal * .1;
+                    total = subTotal + tax;
+                    
+                    // alert (cakeT + " " + pinataT);
+                    $("#cake").html("$" + cakeT);
+                    $("#pinata").html("$" + pinataT);
+                    $("#subt").html("$" + subTotal);
+                    $("#tax").html("$" + tax);
+                    $("#total").html("$" + (total + parseInt(shippingCost)));
+                });
+                
+                $(".shipping_check").change(function(){
+                    // console.log($(this).val());
+                    shippingCost = $(this).val();
+                    $("#shipCost").html("$" + shippingCost);
+                    $("#total").html("$" + (total + parseInt(shippingCost)));
+                });
+                
+                $("submitbtn").change(function(){
+                    if ($("terms").is(":checked")) {
+                        alert("cool");
+                    }
+                    else {
+                        alert("The terms must be accepted!");
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Holiday Shopping</h1>
+        <h2>Cart</h2>
+        <table align="center">
+          <tr>
+            <th>Product</th>
+            <th>Unit Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+          </tr>
+          <tr>
+              <td>Fruit Cake</td>
+              <td>$30</td>
+              <td>
+                  <input id = "cakeq" type = "text">
+              </td>
+              <td id="cake">$0</td>
+          </tr>
+          <tr>
+              <td>Pinata (Medium size)</td>
+              <td>$20</td>
+              <td>
+                  <input id = "pinataq" type = "text">
+              </td>
+              <td id="pinata">$0</td>
+          </tr>
+          <tr>
+              <td>Shipping</td>
+              <td></td>
+              <td></td>
+              <td id="shipCost">$5</td>
+          </tr>
+          <tr>
+              <td>Subtotal</td>
+              <td></td>
+              <td></td>
+              <td id="subt">$0</td>
+          </tr>
+          <tr>
+              <td>Tax(10%)</td>
+              <td></td>
+              <td></td>
+              <td id="tax">$0</td>
+          </tr>
+          <tr>
+              <td>Total</td>
+              <td></td>
+              <td></td>
+              <td id="total">$0</td>
+          </tr>
+         </table>
+        <input type="radio" name="shipping" class="shipping_check" value=15>Next-day Delivery: $15.00 <br>
+        <input type="radio" name="shipping" class="shipping_check" value=10>Three-day Delivery: $10.00<br>
+        <input type="radio" name="shipping" class="shipping_check" value=5 checked="checked"> Regular shipping (5-8 days): $5.00<br>
+        <br><br><br>
+        
+        <div id = "terms"><input type="checkbox" name="terms" value="terms"/>I accept the terms of this purchase</div>
+        <input type = "submit" name="submitbtn" id ="btn" value = "CONFIRM PURCHASE">
+    </body>
+</html>

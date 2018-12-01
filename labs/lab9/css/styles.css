@@ -1,0 +1,38 @@
+.error{
+    color: red;
+}
+#zipError {
+    display: inline-block;
+}
+body {
+    background: linear-gradient(to top left, white 35%, gray 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Arial";
+}
+
+input, select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+}
+
+input[type=submit] {
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: lightblue;
+}
+
+footer {
+    font-size: 0.9em;
+}

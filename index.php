@@ -14,6 +14,8 @@ if (isset($_GET["assignment"])) {
             header("Location:labs/".$page."/scart");
         else if ($page == "lab8")
             header("Location:labs/".$page."/hangman");
+        else if ($page == "lab10")
+            header("Location:labs/".$page."/pets");
         else
             header("Location:labs/".$page);
     }
@@ -59,6 +61,8 @@ if (isset($_GET["assignment"])) {
             <option value="lab6">Lab 6</option>
             <option value="lab7">Lab 7</option>
             <option value="lab8">Lab 8</option>
+            <option value="lab9">Lab 9</option>
+            <option value="lab10">Lab 10</option>
             <option value="tp">Team Project</option>
         </select>
         

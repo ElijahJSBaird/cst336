@@ -8,10 +8,10 @@
         $incident = array();
         //$result = array();
         
-        $sql = "SET @newid=0; UPDATE reports SET reportId=(@newid:=@newid+1) ORDER BY reportID;";
+        $sql = "SET @newid=0; UPDATE mi_reports SET reportId=(@newid:=@newid+1) ORDER BY reportID;";
         $stmt = $dbConn->prepare($sql);
         $stmt->execute();
-        $sql = "SELECT * FROM `reports`";
+        $sql = "SELECT * FROM `mi_reports`";
         $stmt = $dbConn->prepare($sql);
         $stmt->execute();
         $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -34,7 +34,7 @@
         $size = 0;
         //$result = array();
         
-        $sql = "SELECT COUNT(*) AS total FROM reports";
+        $sql = "SELECT COUNT(*) AS total FROM mi_reports";
         $stmt = $dbConn->prepare($sql);
         $stmt->execute();
         $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -93,7 +93,7 @@
         }
         
         
-        $sql = "INSERT INTO reports (latitude, longitude, disasterType) 
+        $sql = "INSERT INTO mi_reports (latitude, longitude, disasterType) 
                 VALUES (:latitude, :longitude, :disasterType);";
         $np = array();
         $np[":latitude"] = $latitude;
