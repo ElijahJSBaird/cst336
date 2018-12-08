@@ -1,0 +1,14 @@
+[08-Dec-2018 21:38:08 UTC] PHP Warning:  include(../../../../inc/dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/labs/lab10/pets/api/getPetInfo.php on line 3
+[08-Dec-2018 21:38:08 UTC] PHP Stack trace:
+[08-Dec-2018 21:38:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/pets/pets.php:0
+[08-Dec-2018 21:38:08 UTC] PHP   2. include() /home/ubuntu/workspace/cst336/labs/lab10/pets/pets.php:39
+[08-Dec-2018 21:38:08 UTC] PHP Warning:  include(): Failed opening '../../../../inc/dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/labs/lab10/pets/api/getPetInfo.php on line 3
+[08-Dec-2018 21:38:08 UTC] PHP Stack trace:
+[08-Dec-2018 21:38:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/pets/pets.php:0
+[08-Dec-2018 21:38:08 UTC] PHP   2. include() /home/ubuntu/workspace/cst336/labs/lab10/pets/pets.php:39
+[08-Dec-2018 21:38:08 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/ubuntu/workspace/cst336/labs/lab10/pets/api/getPetInfo.php:8
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab10/pets/api/getPetInfo.php(8): PDOStatement->execute(NULL)
+#1 /home/ubuntu/workspace/cst336/labs/lab10/pets/pets.php(39): include('/home/ubuntu/wo...')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab10/pets/api/getPetInfo.php on line 8

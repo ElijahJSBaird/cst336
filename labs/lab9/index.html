@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -45,7 +44,6 @@
                         dataType: "json",
                         data: { "zip": $("#zip").val() },
                         success: function(data,status) {
-                           
                            //alert(data.city);
                            $("#city").html(data.city);
                            
@@ -59,9 +57,6 @@
                                $("#long").html(data.longitude);
                                $("#zipError").html("");
                            }
-                           
-                           
-                        
                         },
                         complete: function(data,status) { //optional, used for debugging purposes
                         //alert(status);
@@ -72,34 +67,31 @@
                 }); //zipEvent
                 
                 $("#username").change(function() {
-                var username = $("#username").val();
-                //alert(username);
-                $.ajax({
-
-                    type: "GET",
-                    url: "checkUsername.php",
-                    dataType: "json",
-                    data: { "username": username },
-                    success: function(data, status) {
-                     
-                        if(!data) {
-                            $("#usernameError").html("username is available");
-                            $("#usernameError").css("color", "green");
-                        } else {
-                             $("#usernameError").html("username is not available");
-                             $("#usernameError").css("color", "red");
-                             
+                    var username = $("#username").val();
+                    //alert(username);
+                    $.ajax({
+    
+                        type: "GET",
+                        url: "checkUsername.php",
+                        dataType: "json",
+                        data: { "username": username },
+                        success: function(data, status) {
+                         
+                            if(!data) {
+                                $("#usernameError").html("username is available");
+                                $("#usernameError").css("color", "green");
+                            } else {
+                                 $("#usernameError").html("username is not available");
+                                 $("#usernameError").css("color", "red");
+                            }
+                        
+                        },
+                        complete: function(data, status) { //optional, used for debugging purposes
+                            //alert(status);
                         }
-                    
-                    },
-                    complete: function(data, status) { //optional, used for debugging purposes
-                        //alert(status);
-                    }
-
-                }); //ajax
-
-
-            });
+                    }); //ajax
+                });
+                
                 $("#state").change(function(){
                     $.ajax({
 

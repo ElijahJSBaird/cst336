@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Login</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+        <script>
+        
+            function validateForm() {
+                
+                var username = $("#username").val();
+                var password = $("#password").val();
+                
+                if ((username == "user_1" || username == "user_2") && password == "s3cr3t") {
+                	document.location.href = "quiz.html";
+                }
+                
+            }
+            
+            $("document").ready(function(){  
+	            $("#login").click(function() {
+	                var username = $("#username").val();
+	                var password = $("#password").val();
+	                $.ajax({
+	
+	                    type: "POST",
+	                    url: "checkUsername.php",
+	                    dataType: "json",
+	                    data: { "username": username, "password": password },
+	                    complete: function(data, status) {
+	                     
+	                    	// if (data) {
+	                        	// alert(username + " " + password);
+	                    	// }
+	                    	// alert(data);
+	                    }
+	
+	                }); //ajax
+	            });
+            });
+        </script>
+	</head>
+	<body align="center">
+	    <h1>Login</h1>
+	    <h2>Credentials required before submiting form.</h2>
+	    You can log in using usernames <strong>user_1</strong> or <strong>user_2</strong>. The password is <strong>s3cr3t</strong>.
+	    <br><br>
+	    <form method="POST" onsubmit="return validateForm()">
+	    	<input type="text" name="username" id="username" placeholder="Username"/><br>
+		    <input type="text" name="password" id="password" placeholder="Password"/>
+		    <br><input type="submit" name="login" id="login" value="Login"/>
+	    </form>
+	    
+	</body>
+</html>

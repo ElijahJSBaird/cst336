@@ -1,5 +1,3 @@
-
-
 --
 -- Table structure for table `pets`
 --
@@ -27,7 +25,3 @@ INSERT INTO `pets` (`id`, `name`, `type`, `breed`, `yob`, `color`, `pictureURL`,
 (4, 'Ted', 'Sloth', 'Sloth', 2014, 'Grey', 'ted.jpg', 'I enjoy laying around and doing nothing all day... just like you in the weekends.'),
 (5, 'Sally', 'Cat', 'Tabby', 2012, 'Black', 'sally.jpg', 'Looking for a loving home. I am most definitely NOT bad luck.'),
 (6, 'Alex', 'Lion', 'Wild', 2013, 'Golden Brown', 'alex.jpg', 'Adopt me! I promise I''ll try not to eat you.');
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
