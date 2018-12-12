@@ -276,7 +276,7 @@ function filterEnemies() {
         $stmt->execute($np);
         $record = $stmt->fetchAll(PDO::FETCH_ASSOC);
         $temp = $record;
-        print_r($temp);
+        // print_r($temp);
         return $temp;
     }
 }

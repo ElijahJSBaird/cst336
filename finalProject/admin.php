@@ -40,41 +40,19 @@ if($_GET['searchForm'] == 'submit') {
             
             $("document").ready(function(){
                 
-                $("#order").change(function(){
                     
-                    $.ajax({
-
-                        type: "GET",
-                        url: "http://itcdland.csumb.edu/~milara/ajax/cityInfoByZip.php",
-                        dataType: "json",
-                        data: { "order": $("#order").val() },
-                        success: function(data,status) {
-                            if ($("#order") == "desc") {
-                                displayAllHeartless("desc"); 
-                                // displayAllNobodies("desc");
-                                // displayAllUnversed("desc");
-                            }
-                           //alert(data.city);
-                        //   $("#city").html(data.city);
-                           
-                        //   if (!data) {
-                        //       $("#lat").html("");
-                        //       $("#long").html("");
-                        //       $("#zipError").html("Zip code not found");
-                        //   }
-                        //   else {
-                        //       $("#lat").html(data.latitude);
-                        //       $("#long").html(data.longitude);
-                        //       $("#zipError").html("");
-                        //   }
-                        },
-                        complete: function(data,status) { //optional, used for debugging purposes
-                        //alert(status);
+                    $("[id*=color] input").live("click", function () {
+                        console.log(this);
+                        var selectedValue = $(this).val();
+                        var selectedText = $(this).next().html();
+                        if (selectedText == "Yes") {
+                            $("#txtExistingDescription").css("background-color", "purple");
                         }
-                        
-                    });//ajax
+                        else {
+                            $("#txtExistingDescription").css("background-color", "white");
+                        }
+                    });
                     
-                }); //zipEvent
             });//documentReady
         </script>
     
@@ -96,7 +74,7 @@ if($_GET['searchForm'] == 'submit') {
     <body id="admin">
         <form>
             Key Word <input type='text' name='name' value=''  /><br>
-            Colors <select name='color'>
+            Colors <select name='color' class="color" id="color">
                         <option value=""> Select One</option>
                         <?=displayColors()?>
                    </select><br>
@@ -110,7 +88,15 @@ if($_GET['searchForm'] == 'submit') {
             
         <?php
             if (empty($items)) {
+            // if (isset($_GET["name"])){
+            //     displayAllHeartless($_GET["name"]); 
+            //     displayAllNobodies($_GET["name"]);
+            //     displayAllUnversed($_GET["name"]);
+            // } else {
                 displayAllHeartless(); 
+                // displayAllNobodies("asc");
+                // displayAllUnversed("asc");
+                // displayResults();
             }
         ?>
         
