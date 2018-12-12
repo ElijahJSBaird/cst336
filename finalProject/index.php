@@ -51,7 +51,7 @@ function login($username, $password) {
     </head>
     <body>
 
-        <h1> Ottermart - Admin Login </h1>
+        <h1> Kingdom Hearts Enemies - Admin Login </h1>
         
         <form method="post">
           Username:  <input type="text" name="username"/> <br>
