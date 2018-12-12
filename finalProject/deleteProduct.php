@@ -6,12 +6,11 @@ $dbConn = startConnection("finalProject");
 include 'inc/functions.php';
 validateSession();
 
-function deleteEnemy() {
-    $sql = "DELETE FROM ".$_GET["faction"]." WHERE name = '" . $_GET['name']."'";
-    echo "<script>console.log('".$sql."');</script>";
-    $stmt=$dbConn->prepare($sql);
-    $stmt->execute();
-}
+
+$sql = "DELETE FROM ".$_GET["faction"]." WHERE name = '" . $_GET['name']."'";
+echo "<script>alert('".$sql."');</script>";
+$stmt=$dbConn->prepare($sql);
+$stmt->execute();
 
 
 

@@ -28,13 +28,15 @@ function login($username, $password) {
     // print_r($record);
     
     if (empty($record)) {
-        
-        echo "<div id='error'>Wrong username or password!!</div>";
+        $_SESSION['adminFullName'] = "Guest";
+        header('Location: user.php');
     } else {
-       
-      $_SESSION['adminFullName'] = $record['firstName'] .  "   "  . $record['lastName'];
-      header('Location: admin.php'); //redirects to another program
-        
+        $_SESSION['adminFullName'] = $record['firstName'] .  "   "  . $record['lastName'];
+       if ($record["isAdmin"] == 1){
+          header('Location: admin.php'); //redirects to another program
+       } else {
+          header('Location: user.php');
+       }
     }
 }
 

@@ -26,7 +26,7 @@ function displayAllHeartless(){
             $sql .= " AND color = '".$color."'";
         }
         if ($name) {
-            $sql .= " AND name = '".$name."'";
+            $sql .= " AND name = ".$name;
         }
         $sql .= " ORDER BY name ASC";
         $stmt = $dbConn->prepare($sql);
@@ -37,7 +37,7 @@ function displayAllHeartless(){
             $sql .= " AND color = '".$color."'";
         }
         if ($name) {
-            $sql .= " AND name = '".$name."'";
+            $sql .= " AND name = ".$name;
         }
         $sql .= " ORDER BY name ASC";
         $stmt = $dbConn->prepare($sql);
@@ -48,7 +48,7 @@ function displayAllHeartless(){
             $sql .= " AND color = '".$color."'";
         }
         if ($name) {
-            $sql .= " AND name = '".$name."'";
+            $sql .= " AND name = ".$name;
         }
         $sql .= " ORDER BY name ASC";
         $stmt = $dbConn->prepare($sql);
@@ -97,63 +97,6 @@ function displayAllHeartless(){
     
     
     foreach ($records as $record) {
-        echo "<a class='btn btn-primary' role='button' href='updateProduct.php?enemy=".$record['enemy']."&name=".$record['name']."&faction=".$record['enemy']."&description=".$record["description"]."&color=".$record["color"]."&size=".$record["size"]."'>Update</a>";
-        //echo "[<a href='deleteProduct.php?productId=".$record['productId']."'>Delete</a>]";
-        echo "<form action='deleteProduct.php' onsubmit='return confirmDelete()'>";
-        echo "   <input type='hidden' name='faction' value='".$record['enemy']."'>";
-        echo "   <input type='hidden' name='name' value=".$record["name"].">";
-        echo "   <button class='btn btn-outline-danger' type='submit'>Delete</button>";
-        echo "</form>";
-        
-        echo "[<a 
-        
-        onclick='openModal()' target='productModal'
-        href='productInfo.php?name=".$record["name"]."&faction=".$record['enemy']."'>".$record['name']."</a>]  ";
-        echo "<br><strong>Description:</strong> ".$record["description"]."<br><strong>Size:</strong> ".$record["size"]."<br><strong>Color:</strong> ".$record["color"]."<br><br>";
-        
-    }
-}
-function displayAllNobodies(){
-    global $dbConn;
-    
-    $sql = "SELECT * FROM nobody";
-    $stmt = $dbConn->prepare($sql);
-    $stmt->execute();
-    $records = $stmt->fetchAll(PDO::FETCH_ASSOC); //we're expecting multiple records
-    $record['enemy'] = "nobody";
-    foreach ($records as $record) {
-        echo "<a class='btn btn-primary' role='button' href='updateProduct.php?enemy=".$record['enemy']."&name=".$record['name']."&faction=".$record['enemy']."&description=".$record["description"]."&color=".$record["color"]."&size=".$record["size"]."'>Update</a>";
-        //echo "[<a href='deleteProduct.php?productId=".$record['productId']."'>Delete</a>]";
-        echo "<form action='deleteProduct.php' onsubmit='return confirmDelete()'>";
-        echo "   <input type='hidden' name='faction' value='".$record['enemy']."'>";
-        echo "   <input type='hidden' name='name' value=".$record["name"].">";
-        echo "   <button class='btn btn-outline-danger' type='submit'>Delete</button>";
-        echo "</form>";
-        
-        echo "[<a 
-        
-        onclick='openModal()' target='productModal'
-        href='productInfo.php?name=".$record["name"]."&faction=".$record['enemy']."'>".$record['name']."</a>]  ";
-        echo "<br><strong>Description:</strong> ".$record["description"]."<br><strong>Size:</strong> ".$record["size"]."<br><strong>Color:</strong> ".$record["color"]."<br><br>";
-        
-    }
-}
-function displayAllUnversed(){
-    global $dbConn;
-    
-    $sql = "SELECT * FROM unversed ORDER BY name";
-    $stmt = $dbConn->prepare($sql);
-    $stmt->execute();
-    $records = $stmt->fetchAll(PDO::FETCH_ASSOC); //we're expecting multiple records
-    $record['enemy'] = "unversed";
-    foreach ($records as $record) {
-        
-        echo "<a class='btn btn-primary' role='button' href='updateProduct.php?enemy=".$record['enemy']."&name=".$record['name']."&faction=".$record['enemy']."&description=".$record["description"]."&color=".$record["color"]."&size=".$record["size"]."'>Update</a>";
-        echo "<form action='deleteProduct.php' onsubmit='return confirmDelete()'>";
-        echo "   <input type='hidden' name='faction' value='".$record['enemy']."'>";
-        echo "   <input type='hidden' name='name' value=".$record["name"].">";
-        echo "   <button class='btn btn-outline-danger' type='submit'>Delete</button>";
-        echo "</form>";
         
         echo "[<a 
         
@@ -276,7 +219,6 @@ function filterEnemies() {
         $stmt->execute($np);
         $record = $stmt->fetchAll(PDO::FETCH_ASSOC);
         $temp = $record;
-        print_r($temp);
         return $temp;
     }
 }

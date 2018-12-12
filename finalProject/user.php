@@ -6,7 +6,7 @@ session_start();
 include '../inc/dbConnection.php';
 $dbConn = startConnection("finalProject");
 
-include 'inc/functions.php';
+include 'inc/userFunctions.php';
 // include 'deleteProduct.php';
 validateSession();
 
@@ -24,14 +24,11 @@ if($_GET['searchForm'] == 'submit') {
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Admin Main Page </title>
+        <title> Main Page </title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" type="text/css" />
         <link rel="stylesheet" href="cssIndex/styles.css" type="text/css" />
         
         <script> 
-            function confirmDelete() {
-                return confirm("Are you sure you want to delete this enemy?");
-            }
             
             function openModal() {
                 
@@ -39,34 +36,23 @@ if($_GET['searchForm'] == 'submit') {
             }
             
             $("document").ready(function(){
-                
-                $("#order").change(function(){
-                    
+                $("#searchForm").on( "click", "button", function( event ) {
+                  $(event.delegateTarget ).css( "background-color", "green");
+                });
+
+                $("#name").change(function(){
+                    var color = $("#color").val();
                     $.ajax({
 
                         type: "GET",
                         url: "http://itcdland.csumb.edu/~milara/ajax/cityInfoByZip.php",
                         dataType: "json",
-                        data: { "order": $("#order").val() },
+                        data: { "color": $("#color").val() },
                         success: function(data,status) {
-                            if ($("#order") == "desc") {
-                                displayAllHeartless("desc"); 
-                                // displayAllNobodies("desc");
-                                // displayAllUnversed("desc");
-                            }
-                           //alert(data.city);
-                        //   $("#city").html(data.city);
-                           
-                        //   if (!data) {
-                        //       $("#lat").html("");
-                        //       $("#long").html("");
-                        //       $("#zipError").html("Zip code not found");
-                        //   }
-                        //   else {
-                        //       $("#lat").html(data.latitude);
-                        //       $("#long").html(data.longitude);
-                        //       $("#zipError").html("");
-                        //   }
+                            
+                                
+                                $("#user").css('background-color', "red");
+                            
                         },
                         complete: function(data,status) { //optional, used for debugging purposes
                         //alert(status);
@@ -80,23 +66,20 @@ if($_GET['searchForm'] == 'submit') {
     
     </head>
     <div id="hey">
-        <h1> ADMIN SECTION - KINGDOM HEARTS ENEMIES </h1>
+        <h1> KINGDOM HEARTS ENEMIES </h1>
         
          <h3>Welcome <?= $_SESSION['adminFullName'] ?> </h3>
 
-          <form action="addProduct.php">
-              <input type="submit" value="Add New Enemy">
-          </form>
          <form action="logout.php">
               <input type="submit" value="Logout">
           </form>
 
            <br><br>
     </div>
-    <body id="admin">
+    <body id="user">
         <form>
             Key Word <input type='text' name='name' value=''  /><br>
-            Colors <select name='color'>
+            Colors <select name='color' id="color">
                         <option value=""> Select One</option>
                         <?=displayColors()?>
                    </select><br>
@@ -105,7 +88,7 @@ if($_GET['searchForm'] == 'submit') {
                    <br>
             <!--       <input type='radio' name='order' value='descSize' /> Size Large-Small  -->
             <!--       <input type='radio' name='order' value='ascSize' /> Size Small-Large-->
-            <br><input type='submit' name='searchForm' value='Submit' />
+            <br><input type='submit' name='searchForm' id="searchForm" value='Submit' />
         </form>
             
         <?php
