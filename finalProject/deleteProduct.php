@@ -8,7 +8,7 @@ validateSession();
 
 
 $sql = "DELETE FROM ".$_GET["faction"]." WHERE name = '" . $_GET['name']."'";
-echo "<script>alert('".$sql."');</script>";
+echo $sql;
 $stmt=$dbConn->prepare($sql);
 $stmt->execute();
 

@@ -1003,3 +1003,327 @@ Stack trace:
 #1 /home/ubuntu/workspace/cst336/finalProject/productInfo.php(11): getProductInfo('Invisible', '')
 #2 {main}
   thrown in /home/ubuntu/workspace/cst336/finalProject/inc/functions.php on line 304
+[12-Dec-2018 22:24:18 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE name = 'Wyvern'' at line 1' in /home/ubuntu/workspace/cst336/finalProject/inc/functions.php:304
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/inc/functions.php(304): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst336/finalProject/productInfo.php(11): getProductInfo('Wyvern', '')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/inc/functions.php on line 304
+[12-Dec-2018 22:24:41 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE name = 'Wyvern'' at line 1' in /home/ubuntu/workspace/cst336/finalProject/inc/functions.php:304
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/inc/functions.php(304): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst336/finalProject/productInfo.php(11): getProductInfo('Wyvern', '')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/inc/functions.php on line 304
+[12-Dec-2018 22:25:43 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE name = 'Wyvern'' at line 1' in /home/ubuntu/workspace/cst336/finalProject/inc/functions.php:304
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/inc/functions.php(304): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst336/finalProject/productInfo.php(11): getProductInfo('Wyvern', '')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/inc/functions.php on line 304
+[12-Dec-2018 22:26:03 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE name = Wyvern' at line 1' in /home/ubuntu/workspace/cst336/finalProject/inc/functions.php:304
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/inc/functions.php(304): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst336/finalProject/productInfo.php(11): getProductInfo('Wyvern', '')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/inc/functions.php on line 304
+[12-Dec-2018 22:26:44 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE name = 'Wyvern'' at line 1' in /home/ubuntu/workspace/cst336/finalProject/inc/functions.php:304
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/inc/functions.php(304): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst336/finalProject/productInfo.php(11): getProductInfo('Wyvern', '')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/inc/functions.php on line 304
+[12-Dec-2018 22:27:20 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE name = "Wyvern"' at line 1' in /home/ubuntu/workspace/cst336/finalProject/inc/functions.php:304
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/inc/functions.php(304): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst336/finalProject/productInfo.php(11): getProductInfo('Wyvern', '')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/inc/functions.php on line 304
+[12-Dec-2018 22:28:07 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE name = "Wyvern"' at line 1' in /home/ubuntu/workspace/cst336/finalProject/inc/functions.php:304
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/inc/functions.php(304): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst336/finalProject/productInfo.php(11): getProductInfo('Wyvern', '')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/inc/functions.php on line 304
+[12-Dec-2018 22:28:47 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE name = "Wyvern"' at line 1' in /home/ubuntu/workspace/cst336/finalProject/inc/functions.php:304
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/inc/functions.php(304): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst336/finalProject/productInfo.php(11): getProductInfo('Wyvern', '')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/inc/functions.php on line 304
+[12-Dec-2018 22:28:54 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE name = "WaterCore"' at line 1' in /home/ubuntu/workspace/cst336/finalProject/inc/functions.php:304
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/inc/functions.php(304): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst336/finalProject/productInfo.php(11): getProductInfo('WaterCore', '')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/inc/functions.php on line 304
+[12-Dec-2018 22:29:12 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE name = "Wyvern"' at line 1' in /home/ubuntu/workspace/cst336/finalProject/inc/functions.php:304
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/inc/functions.php(304): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst336/finalProject/productInfo.php(11): getProductInfo('Wyvern', '')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/inc/functions.php on line 304
+[12-Dec-2018 22:29:17 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE name = "Wyvern"' at line 1' in /home/ubuntu/workspace/cst336/finalProject/inc/functions.php:304
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/inc/functions.php(304): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst336/finalProject/productInfo.php(11): getProductInfo('Wyvern', '')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/inc/functions.php on line 304
+[12-Dec-2018 22:33:21 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/cst336/finalProject/productInfo.php on line 26
+[12-Dec-2018 22:37:26 UTC] PHP Parse error:  syntax error, unexpected '"<br>"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/ubuntu/workspace/cst336/finalProject/inc/functions.php on line 312
+[12-Dec-2018 22:37:26 UTC] PHP Stack trace:
+[12-Dec-2018 22:37:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/finalProject/admin.php:0
+[12-Dec-2018 22:38:07 UTC] PHP Parse error:  syntax error, unexpected '"<br>"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/ubuntu/workspace/cst336/finalProject/inc/functions.php on line 312
+[12-Dec-2018 22:38:07 UTC] PHP Stack trace:
+[12-Dec-2018 22:38:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/finalProject/admin.php:0
+[12-Dec-2018 22:38:09 UTC] PHP Parse error:  syntax error, unexpected '"<br>"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/ubuntu/workspace/cst336/finalProject/inc/functions.php on line 312
+[12-Dec-2018 22:38:09 UTC] PHP Stack trace:
+[12-Dec-2018 22:38:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/finalProject/admin.php:0
+[12-Dec-2018 22:47:17 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SET description = 'wow',
+               color = 'white',
+               size = '' at line 2' in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php:35
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/updateProduct.php(35): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php on line 35
+[12-Dec-2018 22:48:41 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SET description = 'wow',
+               color = 'white',
+               size = '' at line 2' in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php:35
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/updateProduct.php(35): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php on line 35
+[12-Dec-2018 22:50:35 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SET description = 'A Wyvern is a large, draconian creature with predominantly da' at line 2' in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php:35
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/updateProduct.php(35): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php on line 35
+[12-Dec-2018 22:51:28 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SET description = 'A Wyvern is a large, draconian creature with predominantly da' at line 2' in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php:35
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/updateProduct.php(35): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php on line 35
+[12-Dec-2018 22:52:08 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SET description = 'A Wyvern is a large, draconian creature with predominantly da' at line 2' in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php:35
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/updateProduct.php(35): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php on line 35
+[12-Dec-2018 22:52:34 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SET description = 'A Wyvern is a large, draconian creature with predominantly da' at line 2' in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php:35
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/updateProduct.php(35): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php on line 35
+[12-Dec-2018 22:53:35 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SET description = 'A Wyvern is a large, draconian creature with predominantly da' at line 2' in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php:35
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/updateProduct.php(35): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php on line 35
+[12-Dec-2018 22:55:03 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SET description = 'A Wyvern is a large, draconian creature with predominantly da' at line 2' in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php:35
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/updateProduct.php(35): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php on line 35
+[12-Dec-2018 22:55:05 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SET description = 'A Wyvern is a large, draconian creature with predominantly da' at line 2' in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php:35
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/updateProduct.php(35): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php on line 35
+[12-Dec-2018 22:56:31 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SET description = 'A Wyvern is a large, draconian creature with predominantly da' at line 2' in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php:35
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/updateProduct.php(35): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php on line 35
+[12-Dec-2018 22:58:59 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/cst336/finalProject/inc/functions.php on line 319
+[12-Dec-2018 22:58:59 UTC] PHP Stack trace:
+[12-Dec-2018 22:58:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/finalProject/updateProduct.php:0
+[12-Dec-2018 22:59:14 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SET description = 'A Wyvern is a large, draconian creature with predominantly da' at line 2' in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php:35
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/updateProduct.php(35): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php on line 35
+[12-Dec-2018 22:59:52 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SET description = 'A Wyvern is a large, draconian creature with predominantly da' at line 2' in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php:35
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/updateProduct.php(35): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php on line 35
+[12-Dec-2018 22:59:53 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SET description = 'A Wyvern is a large, draconian creature with predominantly da' at line 2' in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php:35
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/updateProduct.php(35): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php on line 35
+[12-Dec-2018 23:02:41 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SET description = 'A Wyvern is a large, draconian creature with predominantly da' at line 2' in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php:35
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/updateProduct.php(35): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php on line 35
+[12-Dec-2018 23:04:56 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SET description = 'A Wyvern is a large, draconian creature with predominantly da' at line 2' in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php:35
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/updateProduct.php(35): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php on line 35
+[12-Dec-2018 23:05:34 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '''
+            SET description = 'A Wyvern is a large, draconian creature with p' at line 1' in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php:36
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/updateProduct.php(36): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php on line 36
+[12-Dec-2018 23:05:55 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''heartless'
+            SET description = 'A Wyvern is a large, draconian creatu' at line 1' in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php:36
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/updateProduct.php(36): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php on line 36
+[12-Dec-2018 23:07:20 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''heartless'
+            SET description = 'A Wyvern is a large, draconian creatu' at line 1' in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php:36
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/updateProduct.php(36): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php on line 36
+[12-Dec-2018 23:07:22 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''heartless'
+            SET description = 'A Wyvern is a large, draconian creatu' at line 1' in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php:36
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/updateProduct.php(36): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php on line 36
+[12-Dec-2018 23:10:54 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''heartless'
+            SET description = 'A Wyvern is a large, draconian creatu' at line 1' in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php:36
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/updateProduct.php(36): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php on line 36
+[12-Dec-2018 23:10:56 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '''
+            SET description = 'A Wyvern is a large, draconian creature with p' at line 1' in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php:36
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/updateProduct.php(36): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php on line 36
+[12-Dec-2018 23:10:59 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '''
+            SET description = 'A Wyvern is a large, draconian creature with p' at line 1' in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php:36
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/updateProduct.php(36): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php on line 36
+[12-Dec-2018 23:11:11 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '''
+            SET description = 'A Wyvern is a large, draconian creature with p' at line 1' in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php:36
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/updateProduct.php(36): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php on line 36
+[12-Dec-2018 23:11:15 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '''
+            SET description = 'A Wyvern is a large, draconian creature with p' at line 1' in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php:36
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/updateProduct.php(36): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php on line 36
+[12-Dec-2018 23:12:33 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''heartless'
+            SET description = 'A Wyvern is a large, draconian creatu' at line 1' in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php:36
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/updateProduct.php(36): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php on line 36
+[12-Dec-2018 23:12:41 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''heartless'
+            SET description = 'A Wyvern is a large, draconian creatu' at line 1' in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php:36
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/updateProduct.php(36): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php on line 36
+[12-Dec-2018 23:13:45 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''heartless'
+            SET description = 'A Wyvern is a large, draconian creatu' at line 1' in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php:37
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/updateProduct.php(37): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php on line 37
+[12-Dec-2018 23:14:01 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''heartless'
+            SET description = 'A Wyvern is a large, draconian creatu' at line 1' in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php:37
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/updateProduct.php(37): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php on line 37
+[12-Dec-2018 23:15:45 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''heartless'
+            SET description = 'A Wyvern is a large, draconian creatu' at line 1' in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php:37
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/updateProduct.php(37): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php on line 37
+[12-Dec-2018 23:16:14 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''heartless'
+            SET description = 'A Wyvern is a large, draconian creatu' at line 1' in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php:37
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/updateProduct.php(37): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php on line 37
+[12-Dec-2018 23:16:53 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''heartless'
+            SET description = 'A Wyvern is a large, draconian creatu' at line 1' in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php:37
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/updateProduct.php(37): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php on line 37
+[12-Dec-2018 23:18:33 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Wyvern is a large, draconian creature with predominantly dark red skin, save for' at line 2' in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php:37
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/updateProduct.php(37): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php on line 37
+[12-Dec-2018 23:18:46 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Wyvern is a large, draconian creature with predominantly dark red skin, save for' at line 2' in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php:37
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/updateProduct.php(37): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php on line 37
+[12-Dec-2018 23:19:07 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Wyvern' in 'where clause'' in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php:37
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/updateProduct.php(37): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php on line 37
+[12-Dec-2018 23:19:48 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Red' in 'field list'' in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php:37
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/updateProduct.php(37): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php on line 37
+[12-Dec-2018 23:20:11 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php:38
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/updateProduct.php(38): PDOStatement->fetchAll(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php on line 38
+[12-Dec-2018 23:21:10 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SET description = 'cow king',
+               color = 'white',
+               siz' at line 2' in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php:37
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/updateProduct.php(37): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php on line 37
+[12-Dec-2018 23:21:32 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SET description = 'cowking',
+               color = 'white',
+               size' at line 2' in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php:37
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/updateProduct.php(37): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/updateProduct.php on line 37
+[12-Dec-2018 23:22:43 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE name = 'cow'' at line 1' in /home/ubuntu/workspace/cst336/finalProject/deleteProduct.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/deleteProduct.php(13): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/deleteProduct.php on line 13
+[12-Dec-2018 23:24:14 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'faction' cannot be null' in /home/ubuntu/workspace/cst336/finalProject/addProduct.php:29
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/addProduct.php(29): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/addProduct.php on line 29
+[12-Dec-2018 23:24:58 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(name, description, size, color, faction) 
+            VALUES ('cow', 'a cow', '' at line 1' in /home/ubuntu/workspace/cst336/finalProject/addProduct.php:29
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/addProduct.php(29): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/addProduct.php on line 29
+[12-Dec-2018 23:26:00 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE name = 'cow'' at line 1' in /home/ubuntu/workspace/cst336/finalProject/deleteProduct.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/deleteProduct.php(13): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/deleteProduct.php on line 13
+[12-Dec-2018 23:26:53 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE name = 'cow'' at line 1' in /home/ubuntu/workspace/cst336/finalProject/deleteProduct.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/deleteProduct.php(13): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/deleteProduct.php on line 13
+[12-Dec-2018 23:27:14 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE name = 'cow'' at line 1' in /home/ubuntu/workspace/cst336/finalProject/deleteProduct.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/deleteProduct.php(13): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/deleteProduct.php on line 13

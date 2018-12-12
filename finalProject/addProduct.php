@@ -11,17 +11,19 @@ if (isset($_GET['addProduct'])) { //checks whether the form was submitted
     $name = $_GET['name'];
     $description =  $_GET['description'];
     $size =  $_GET['size'];
-    $type =  $_GET['id'];
+    $type =  $_GET['faction'];
     $color = $_GET['color'];
+    $faction = $_GET['faction'];
     
     
-    $sql = "INSERT INTO ".$type." (name, description, size, color) 
-            VALUES (:name, :description, :size, :color);";
+    $sql = "INSERT INTO ".$type." (name, description, size, color, faction) 
+            VALUES (:name, :description, :size, :color, :faction);";
     $np = array();
     $np[":name"] = $name;
     $np[":description"] = $description;
     $np[":size"] = $size;
     $np[":color"] = $color;
+    $np[":faction"] = $faction;
     
     $stmt = $dbConn->prepare($sql);
     $stmt->execute($np);
@@ -46,7 +48,7 @@ if (isset($_GET['addProduct'])) { //checks whether the form was submitted
            Color: <input type="text" name="color"><br>
            Size: <input type="text" name="size"><br>
            Enemy Faction: 
-           <select name="id">
+           <select name="faction">
               <option value="">Select One</option>
               <option value="heartless">Heartless</option>
               <option value="nobody">Nobody</option>

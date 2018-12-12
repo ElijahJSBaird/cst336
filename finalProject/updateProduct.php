@@ -17,22 +17,26 @@ if (isset($_GET['updateProduct'])){  //user has submitted update form
     global $name, $faction, $description, $color, $id, $size;
     
     
-    $sql = "UPDATE ".$faction." 
-            SET description = :description,
-               color = :color,
-               size = :size
-            WHERE name = '".$name."'";
+    $sql = "UPDATE ".$faction."
+            SET description = '".$description."',
+               color = '".$color."',
+               size = '".$size."'
+            WHERE name = '".$name."';";
     // echo $sql."<br>";
          
     $np = array();
-    // $np[":name"] = $productName;
+    $np[":faction"] = $faction;
+    $np[":name"] = $name;
     $np[":description"] = $description;
     $np[":color"] = $color;
     $np[":size"] = $size;
     // $np[":productImage"] = $image;
+    // print_r($np);
     
     $stmt = $dbConn->prepare($sql);
     $stmt->execute($np);
+    // $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    // print_r($records);
     echo "Enemy was changed!";
 }
 
@@ -60,7 +64,9 @@ if (isset($_GET['name'])) {
         <h1> Updating <?php echo $name ?> </h1>
         
         <form>
-           <input type="hidden" name="name" value=<?php echo $name ?>>
+            <?php
+            echo '<input type="hidden" name="name" value='.$name.'>';
+           ?>
            <input type="hidden" name="faction" value=<?php echo $faction ?>>
            <h2><?php echo ucfirst($faction) ?></h2><br>
            Description: <textarea name="description" cols="50" rows="4" ><?=$description?></textarea><br>

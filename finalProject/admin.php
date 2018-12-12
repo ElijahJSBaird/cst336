@@ -110,15 +110,7 @@ if($_GET['searchForm'] == 'submit') {
             
         <?php
             if (empty($items)) {
-            // if (isset($_GET["name"])){
-            //     displayAllHeartless($_GET["name"]); 
-            //     displayAllNobodies($_GET["name"]);
-            //     displayAllUnversed($_GET["name"]);
-            // } else {
                 displayAllHeartless(); 
-                // displayAllNobodies("asc");
-                // displayAllUnversed("asc");
-                // displayResults();
             }
         ?>
         

@@ -97,10 +97,10 @@ function displayAllHeartless(){
     
     
     foreach ($records as $record) {
-        echo "<a class='btn btn-primary' role='button' href='updateProduct.php?enemy=".$record['enemy']."&name=".$record['name']."&faction=".$record['enemy']."&description=".$record["description"]."&color=".$record["color"]."&size=".$record["size"]."'>Update</a>";
+        echo "<a class='btn btn-primary' role='button' href='updateProduct.php?faction=".$record['faction']."&name=".$record['name']."&description=".$record["description"]."&color=".$record["color"]."&size=".$record["size"]."'>Update</a>";
         //echo "[<a href='deleteProduct.php?productId=".$record['productId']."'>Delete</a>]";
         echo "<form action='deleteProduct.php' onsubmit='return confirmDelete()'>";
-        echo "   <input type='hidden' name='faction' value='".$record['enemy']."'>";
+        echo "   <input type='hidden' name='faction' value='".$record['faction']."'>";
         echo "   <input type='hidden' name='name' value=".$record["name"].">";
         echo "   <button class='btn btn-outline-danger' type='submit'>Delete</button>";
         echo "</form>";
@@ -108,107 +108,107 @@ function displayAllHeartless(){
         echo "[<a 
         
         onclick='openModal()' target='productModal'
-        href='productInfo.php?name=".$record["name"]."&faction=".$record['enemy']."'>".$record['name']."</a>]  ";
+        href='productInfo.php?name=".$record["name"]."&faction=".$record['faction']."'>".$record['name']."</a>]  ";
         echo "<br><strong>Description:</strong> ".$record["description"]."<br><strong>Size:</strong> ".$record["size"]."<br><strong>Color:</strong> ".$record["color"]."<br><br>";
         
     }
 }
-function displayAllNobodies(){
-    global $dbConn;
+// function displayAllNobodies(){
+//     global $dbConn;
     
-    $sql = "SELECT * FROM nobody";
-    $stmt = $dbConn->prepare($sql);
-    $stmt->execute();
-    $records = $stmt->fetchAll(PDO::FETCH_ASSOC); //we're expecting multiple records
-    $record['enemy'] = "nobody";
-    foreach ($records as $record) {
-        echo "<a class='btn btn-primary' role='button' href='updateProduct.php?enemy=".$record['enemy']."&name=".$record['name']."&faction=".$record['enemy']."&description=".$record["description"]."&color=".$record["color"]."&size=".$record["size"]."'>Update</a>";
-        //echo "[<a href='deleteProduct.php?productId=".$record['productId']."'>Delete</a>]";
-        echo "<form action='deleteProduct.php' onsubmit='return confirmDelete()'>";
-        echo "   <input type='hidden' name='faction' value='".$record['enemy']."'>";
-        echo "   <input type='hidden' name='name' value=".$record["name"].">";
-        echo "   <button class='btn btn-outline-danger' type='submit'>Delete</button>";
-        echo "</form>";
+//     $sql = "SELECT * FROM nobody";
+//     $stmt = $dbConn->prepare($sql);
+//     $stmt->execute();
+//     $records = $stmt->fetchAll(PDO::FETCH_ASSOC); //we're expecting multiple records
+//     $record['enemy'] = "nobody";
+//     foreach ($records as $record) {
+//         echo "<a class='btn btn-primary' role='button' href='updateProduct.php?name=".$record['name']."&faction=".$record['enemy']."&description=".$record["description"]."&color=".$record["color"]."&size=".$record["size"]."'>Update</a>";
+//         //echo "[<a href='deleteProduct.php?productId=".$record['productId']."'>Delete</a>]";
+//         echo "<form action='deleteProduct.php' onsubmit='return confirmDelete()'>";
+//         echo "   <input type='hidden' name='faction' value='".$record['enemy']."'>";
+//         echo "   <input type='hidden' name='name' value=".$record["name"].">";
+//         echo "   <button class='btn btn-outline-danger' type='submit'>Delete</button>";
+//         echo "</form>";
         
-        echo "[<a 
+//         echo "[<a 
         
-        onclick='openModal()' target='productModal'
-        href='productInfo.php?name=".$record["name"]."&faction=".$record['enemy']."'>".$record['name']."</a>]  ";
-        echo "<br><strong>Description:</strong> ".$record["description"]."<br><strong>Size:</strong> ".$record["size"]."<br><strong>Color:</strong> ".$record["color"]."<br><br>";
+//         onclick='openModal()' target='productModal'
+//         href='productInfo.php?name=".$record["name"]."&faction=".$record['enemy']."'>".$record['name']."</a>]  ";
+//         echo "<br><strong>Description:</strong> ".$record["description"]."<br><strong>Size:</strong> ".$record["size"]."<br><strong>Color:</strong> ".$record["color"]."<br><br>";
         
-    }
-}
-function displayAllUnversed(){
-    global $dbConn;
+//     }
+// }
+// function displayAllUnversed(){
+//     global $dbConn;
     
-    $sql = "SELECT * FROM unversed ORDER BY name";
-    $stmt = $dbConn->prepare($sql);
-    $stmt->execute();
-    $records = $stmt->fetchAll(PDO::FETCH_ASSOC); //we're expecting multiple records
-    $record['enemy'] = "unversed";
-    foreach ($records as $record) {
+//     $sql = "SELECT * FROM unversed ORDER BY name";
+//     $stmt = $dbConn->prepare($sql);
+//     $stmt->execute();
+//     $records = $stmt->fetchAll(PDO::FETCH_ASSOC); //we're expecting multiple records
+//     $record['enemy'] = "unversed";
+//     foreach ($records as $record) {
         
-        echo "<a class='btn btn-primary' role='button' href='updateProduct.php?enemy=".$record['enemy']."&name=".$record['name']."&faction=".$record['enemy']."&description=".$record["description"]."&color=".$record["color"]."&size=".$record["size"]."'>Update</a>";
-        echo "<form action='deleteProduct.php' onsubmit='return confirmDelete()'>";
-        echo "   <input type='hidden' name='faction' value='".$record['enemy']."'>";
-        echo "   <input type='hidden' name='name' value=".$record["name"].">";
-        echo "   <button class='btn btn-outline-danger' type='submit'>Delete</button>";
-        echo "</form>";
+//         echo "<a class='btn btn-primary' role='button' href='updateProduct.php?enemy=".$record['enemy']."&name=".$record['name']."&faction=".$record['enemy']."&description=".$record["description"]."&color=".$record["color"]."&size=".$record["size"]."'>Update</a>";
+//         echo "<form action='deleteProduct.php' onsubmit='return confirmDelete()'>";
+//         echo "   <input type='hidden' name='faction' value='".$record['enemy']."'>";
+//         echo "   <input type='hidden' name='name' value=".$record["name"].">";
+//         echo "   <button class='btn btn-outline-danger' type='submit'>Delete</button>";
+//         echo "</form>";
         
-        echo "[<a 
+//         echo "[<a 
         
-        onclick='openModal()' target='productModal'
-        href='productInfo.php?name=".$record["name"]."&faction=".$record['enemy']."'>".$record['name']."</a>]  ";
-        echo "<br><strong>Description:</strong> ".$record["description"]."<br><strong>Size:</strong> ".$record["size"]."<br><strong>Color:</strong> ".$record["color"]."<br><br>";
+//         onclick='openModal()' target='productModal'
+//         href='productInfo.php?name=".$record["name"]."&faction=".$record['enemy']."'>".$record['name']."</a>]  ";
+//         echo "<br><strong>Description:</strong> ".$record["description"]."<br><strong>Size:</strong> ".$record["size"]."<br><strong>Color:</strong> ".$record["color"]."<br><br>";
         
-    }
-}
+//     }
+// }
 
-function displayResults() {
-        //global $items;
-        global $dbConn;
+// function displayResults() {
+//         //global $items;
+//         global $dbConn;
         
-        echo "<table class='table'>";
-        foreach($_SESSION['display'] as $t) {
-            $name = $t['name'];
-            $description = $t['description'];
-            $size = $t['size'];
-            $color = $t['color'];
+//         echo "<table class='table'>";
+//         foreach($_SESSION['display'] as $t) {
+//             $name = $t['name'];
+//             $description = $t['description'];
+//             $size = $t['size'];
+//             $color = $t['color'];
                 
-            //Display item as tablerow.
-            echo '<tr>';
-            //echo "<td><img src='$flower_img' class= 'images'></td>";
-            // echo "<td><img src='$flower_img'  style = 'width: 250px; height: 200px;'></td>";
-            echo "<td>";
-            echo "<h4>$name</h4>";
+//             //Display item as tablerow.
+//             echo '<tr>';
+//             //echo "<td><img src='$flower_img' class= 'images'></td>";
+//             // echo "<td><img src='$flower_img'  style = 'width: 250px; height: 200px;'></td>";
+//             echo "<td>";
+//             echo "<h4>$name</h4>";
             
-            echo "<a class='btn btn-primary' role='button' href='updateProduct.php?enemy=".$record['enemy']."&name=".$record['name']."&faction=".$record['enemy']."&description=".$record["description"]."&color=".$record["color"]."&size=".$record["size"]."'>Update</a>";
-            echo "</td>";
-            echo "<td><h4>$description</h4><br/>";
-            echo "</td>";
+//             echo "<a class='btn btn-primary' role='button' href='updateProduct.php?name=".$t['name']."&faction=".$t['faction']."&description=".$t["description"]."&color=".$t["color"]."&size=".$t["size"]."'>Update</a>";
+//             echo "</td>";
+//             echo "<td><h4>$description</h4><br/>";
+//             echo "</td>";
                 
-            //A hidden input element containing the item name.
-            echo "<form>";
-            echo "<input type='hidden' name='name' value='$name'>";
-            echo "<input type='hidden' name='description' value='$description'>";
-            // echo "<input type='hidden' name='flower_img' value='$flower_img'>";
-            echo "<input type='hidden' name='size' value='$size'>";
-            //** BUTTONS CAN HAVE NAMES ** 
-            //** THE CONDITION IN THE FILTER PRODUCTS FUNCTION was expecting 'searchForm'.  The hidden inputs 
-            //** did not submit that value, the condition did not pass any data into $items.
-            // Problem:  the hidden values are being passed into the filter function.  
-            // Save the primary form items in their own array, and display uses that.  
-             //echo "$ GET FLOWER NAME IS " . $_GET['name'];
+//             //A hidden input element containing the item name.
+//             echo "<form>";
+//             echo "<input type='hidden' name='name' value='$name'>";
+//             echo "<input type='hidden' name='description' value='$description'>";
+//             // echo "<input type='hidden' name='flower_img' value='$flower_img'>";
+//             echo "<input type='hidden' name='size' value='$size'>";
+//             //** BUTTONS CAN HAVE NAMES ** 
+//             //** THE CONDITION IN THE FILTER PRODUCTS FUNCTION was expecting 'searchForm'.  The hidden inputs 
+//             //** did not submit that value, the condition did not pass any data into $items.
+//             // Problem:  the hidden values are being passed into the filter function.  
+//             // Save the primary form items in their own array, and display uses that.  
+//              //echo "$ GET FLOWER NAME IS " . $_GET['name'];
         
             
-            echo "<td><button name='searchForm' value='Add' class='btn btn-warning'>Add</button></td>";
+//             echo "<td><button name='searchForm' value='Add' class='btn btn-warning'>Add</button></td>";
     
-            echo "</form>";
-            echo "</tr>";
-        }
-    echo "</table>";
+//             echo "</form>";
+//             echo "</tr>";
+//         }
+//     echo "</table>";
 
-} 
+// } 
 
 function displayColors() {
     global $dbConn;
@@ -298,12 +298,19 @@ function filterEnemies() {
 function getProductInfo($name, $enemy) {
     global $dbConn;
     
-    $sql = "SELECT * FROM ".$enemy." WHERE name = '".$name."'";
+    $sql = "SELECT * FROM heartless   
+                     NATURAL JOIN nobody 
+                     NATURAL JOIN unversed
+                     WHERE name = '".$name."'";
     // echo $sql."<br>";
     $stmt = $dbConn->prepare($sql);
     $stmt->execute();
     $record = $stmt->fetch(PDO::FETCH_ASSOC); //we're expecting multiple records   
-    
+    // echo "<h3>".$record['name']."</h3>";
+    // echo $record['description']."<br>";
+    // echo $record['size']."<br>";
+    // echo $record['color']."<br>";
+    echo($record);
     return $record;
      
     
